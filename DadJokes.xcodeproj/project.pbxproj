@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACBF583627EB71AD006F021A /* DadJokesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF583527EB71AD006F021A /* DadJokesApp.swift */; };
+		ACBF583827EB71AD006F021A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF583727EB71AD006F021A /* ContentView.swift */; };
+		ACBF583A27EB71AF006F021A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBF583927EB71AF006F021A /* Assets.xcassets */; };
+		ACBF583D27EB71AF006F021A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBF583C27EB71AF006F021A /* Preview Assets.xcassets */; };
+		ACBF584727EB71AF006F021A /* DadJokesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF584627EB71AF006F021A /* DadJokesTests.swift */; };
+		ACBF585127EB71AF006F021A /* DadJokesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF585027EB71AF006F021A /* DadJokesUITests.swift */; };
+		ACBF585327EB71AF006F021A /* DadJokesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF585227EB71AF006F021A /* DadJokesUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACBF584327EB71AF006F021A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACBF582A27EB71AD006F021A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACBF583127EB71AD006F021A;
+			remoteInfo = DadJokes;
+		};
+		ACBF584D27EB71AF006F021A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACBF582A27EB71AD006F021A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACBF583127EB71AD006F021A;
+			remoteInfo = DadJokes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACBF583227EB71AD006F021A /* Dad Jokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dad Jokes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBF583527EB71AD006F021A /* DadJokesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesApp.swift; sourceTree = "<group>"; };
+		ACBF583727EB71AD006F021A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ACBF583927EB71AF006F021A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACBF583C27EB71AF006F021A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACBF584227EB71AF006F021A /* DadJokesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DadJokesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBF584627EB71AF006F021A /* DadJokesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesTests.swift; sourceTree = "<group>"; };
+		ACBF584C27EB71AF006F021A /* DadJokesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DadJokesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBF585027EB71AF006F021A /* DadJokesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesUITests.swift; sourceTree = "<group>"; };
+		ACBF585227EB71AF006F021A /* DadJokesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACBF582F27EB71AD006F021A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBF583F27EB71AF006F021A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBF584927EB71AF006F021A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACBF582927EB71AD006F021A = {
+			isa = PBXGroup;
+			children = (
+				ACBF583427EB71AD006F021A /* DadJokes */,
+				ACBF584527EB71AF006F021A /* DadJokesTests */,
+				ACBF584F27EB71AF006F021A /* DadJokesUITests */,
+				ACBF583327EB71AD006F021A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACBF583327EB71AD006F021A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACBF583227EB71AD006F021A /* Dad Jokes.app */,
+				ACBF584227EB71AF006F021A /* DadJokesTests.xctest */,
+				ACBF584C27EB71AF006F021A /* DadJokesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACBF583427EB71AD006F021A /* DadJokes */ = {
+			isa = PBXGroup;
+			children = (
+				ACBF583527EB71AD006F021A /* DadJokesApp.swift */,
+				ACBF583727EB71AD006F021A /* ContentView.swift */,
+				ACBF583927EB71AF006F021A /* Assets.xcassets */,
+				ACBF583B27EB71AF006F021A /* Preview Content */,
+			);
+			path = DadJokes;
+			sourceTree = "<group>";
+		};
+		ACBF583B27EB71AF006F021A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ACBF583C27EB71AF006F021A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACBF584527EB71AF006F021A /* DadJokesTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACBF584627EB71AF006F021A /* DadJokesTests.swift */,
+			);
+			path = DadJokesTests;
+			sourceTree = "<group>";
+		};
+		ACBF584F27EB71AF006F021A /* DadJokesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACBF585027EB71AF006F021A /* DadJokesUITests.swift */,
+				ACBF585227EB71AF006F021A /* DadJokesUITestsLaunchTests.swift */,
+			);
+			path = DadJokesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACBF583127EB71AD006F021A /* DadJokes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBF585627EB71AF006F021A /* Build configuration list for PBXNativeTarget "DadJokes" */;
+			buildPhases = (
+				ACBF582E27EB71AD006F021A /* Sources */,
+				ACBF582F27EB71AD006F021A /* Frameworks */,
+				ACBF583027EB71AD006F021A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DadJokes;
+			productName = DadJokes;
+			productReference = ACBF583227EB71AD006F021A /* Dad Jokes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACBF584127EB71AF006F021A /* DadJokesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBF585927EB71AF006F021A /* Build configuration list for PBXNativeTarget "DadJokesTests" */;
+			buildPhases = (
+				ACBF583E27EB71AF006F021A /* Sources */,
+				ACBF583F27EB71AF006F021A /* Frameworks */,
+				ACBF584027EB71AF006F021A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBF584427EB71AF006F021A /* PBXTargetDependency */,
+			);
+			name = DadJokesTests;
+			productName = DadJokesTests;
+			productReference = ACBF584227EB71AF006F021A /* DadJokesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACBF584B27EB71AF006F021A /* DadJokesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBF585C27EB71AF006F021A /* Build configuration list for PBXNativeTarget "DadJokesUITests" */;
+			buildPhases = (
+				ACBF584827EB71AF006F021A /* Sources */,
+				ACBF584927EB71AF006F021A /* Frameworks */,
+				ACBF584A27EB71AF006F021A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBF584E27EB71AF006F021A /* PBXTargetDependency */,
+			);
+			name = DadJokesUITests;
+			productName = DadJokesUITests;
+			productReference = ACBF584C27EB71AF006F021A /* DadJokesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACBF582A27EB71AD006F021A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					ACBF583127EB71AD006F021A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					ACBF584127EB71AF006F021A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = ACBF583127EB71AD006F021A;
+					};
+					ACBF584B27EB71AF006F021A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = ACBF583127EB71AD006F021A;
+					};
+				};
+			};
+			buildConfigurationList = ACBF582D27EB71AD006F021A /* Build configuration list for PBXProject "DadJokes" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACBF582927EB71AD006F021A;
+			productRefGroup = ACBF583327EB71AD006F021A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACBF583127EB71AD006F021A /* DadJokes */,
+				ACBF584127EB71AF006F021A /* DadJokesTests */,
+				ACBF584B27EB71AF006F021A /* DadJokesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACBF583027EB71AD006F021A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBF583D27EB71AF006F021A /* Preview Assets.xcassets in Resources */,
+				ACBF583A27EB71AF006F021A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBF584027EB71AF006F021A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBF584A27EB71AF006F021A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACBF582E27EB71AD006F021A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBF583827EB71AD006F021A /* ContentView.swift in Sources */,
+				ACBF583627EB71AD006F021A /* DadJokesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBF583E27EB71AF006F021A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBF584727EB71AF006F021A /* DadJokesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBF584827EB71AF006F021A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBF585327EB71AF006F021A /* DadJokesUITestsLaunchTests.swift in Sources */,
+				ACBF585127EB71AF006F021A /* DadJokesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACBF584427EB71AF006F021A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACBF583127EB71AD006F021A /* DadJokes */;
+			targetProxy = ACBF584327EB71AF006F021A /* PBXContainerItemProxy */;
+		};
+		ACBF584E27EB71AF006F021A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACBF583127EB71AD006F021A /* DadJokes */;
+			targetProxy = ACBF584D27EB71AF006F021A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ACBF585427EB71AF006F021A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACBF585527EB71AF006F021A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACBF585727EB71AF006F021A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DadJokes/Preview Content\"";
+				DEVELOPMENT_TEAM = 56M5PADWP6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.somalimbek.dadjokes;
+				PRODUCT_NAME = "Dad Jokes";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACBF585827EB71AF006F021A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DadJokes/Preview Content\"";
+				DEVELOPMENT_TEAM = 56M5PADWP6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.somalimbek.dadjokes;
+				PRODUCT_NAME = "Dad Jokes";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACBF585A27EB71AF006F021A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56M5PADWP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.somalimbek.DadJokesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DadJokes.app/DadJokes";
+			};
+			name = Debug;
+		};
+		ACBF585B27EB71AF006F021A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56M5PADWP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.somalimbek.DadJokesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DadJokes.app/DadJokes";
+			};
+			name = Release;
+		};
+		ACBF585D27EB71AF006F021A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56M5PADWP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.somalimbek.DadJokesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DadJokes;
+			};
+			name = Debug;
+		};
+		ACBF585E27EB71AF006F021A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56M5PADWP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.somalimbek.DadJokesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DadJokes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACBF582D27EB71AD006F021A /* Build configuration list for PBXProject "DadJokes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBF585427EB71AF006F021A /* Debug */,
+				ACBF585527EB71AF006F021A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBF585627EB71AF006F021A /* Build configuration list for PBXNativeTarget "DadJokes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBF585727EB71AF006F021A /* Debug */,
+				ACBF585827EB71AF006F021A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBF585927EB71AF006F021A /* Build configuration list for PBXNativeTarget "DadJokesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBF585A27EB71AF006F021A /* Debug */,
+				ACBF585B27EB71AF006F021A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBF585C27EB71AF006F021A /* Build configuration list for PBXNativeTarget "DadJokesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBF585D27EB71AF006F021A /* Debug */,
+				ACBF585E27EB71AF006F021A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACBF582A27EB71AD006F021A /* Project object */;
+}
