@@ -76,4 +76,4 @@ Networking errors need to be handled always the same way:
 
 ### Mocking
 Mock objects are needed for unit testing and easier development.
-- [ ] Need to decide what layer needs to have a mock version (repository and/or datasource).
+- Every use case class will need to have a mock. It's needed mainly because of the unit tests.
