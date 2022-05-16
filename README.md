@@ -5,7 +5,33 @@ This is a project I started to exercise iOS development and to try technologies 
 ## Features
 - Random joke
 - Save and display favourite jokes
-For detailed feature description, please visit the Functional Specification (coming soon).
+
+For detailed feature description, see Functional Specification.
+
+## Functional Specification
+- Home Screen
+    - Two buttons (in any arrangement)
+    - Ket gomb tetszőleges elrendezésben
+        - Display a random joke on a new screen
+        - Display favourites
+- Random joke screen
+  - Display random joke
+    - Api call for random joke
+    - Display the joke coming in response
+      - Setup of joke is displayed when the screen is presented
+      - Punchline is displayed after user interaction
+  - Mark joke as favourite
+    - Display a star representing whether the joke is favourite or not. Filled: favourite, empty not favourite.
+    - Save additional data (on top of the ones coming in api response):
+      - Name of the joke - ask for user input
+      - Date when the joke is saved
+    - If there is no space for adding more favourites:
+      - Inform user that he/she cannot add new joke until deletin one
+- Favourites screen
+  - List favourites
+    - Sorting: alphabetic - based on the name of joke
+    - Storing: locally
+    - Maximum number of favourites: 10
 
 ## Technical Documentation
 
