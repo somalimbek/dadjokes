@@ -50,10 +50,7 @@ Definition for use case classes:
 Swift Package Manager is used for dependency management. Let's find out what's it got.
 
 ### Dependency Injection
-Decision needed! Also need to consider if the choice I make [fits SwiftUI](https://mokacoding.com/blog/swiftui-dependency-injection/)!
-- [ ] [Swinject](https://github.com/Swinject/Swinject)
-- [ ] [Resolver](https://github.com/hmlongco/Resolver)
-- [ ] Writing [my own](https://www.avanderlee.com/swift/dependency-injection/) DI system
+I chose [Swinject](https://github.com/Swinject/Swinject) because it's one popular and easy to use framework and I've worked with it already as well.
 
 ### Navigation
 - [ ] Need to look into navigation with SwiftUI
