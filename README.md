@@ -41,7 +41,10 @@ The aim is to exercise SwiftUI, so the plan is to implement the whole UI in Swif
 - MVP when using UIKit (if needed)
 
 ### Business Layer Architecture
-The business logic classes are organized based on the [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html).
+As for now, the business logic for the application is either to send an api call or store an object persistently. I will start out with a piece of the [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html): all business logic will be organized by use case classes. More components of Clean can be used if required by the size of the project in the future.
+
+Definition for use case classes:
+- There is one separate class for every separate business logic use case (the name of the class is also use case), meaning that every use case class has exactly one well defined task.
 
 ### Dependency Management
 Swift Package Manager is used for dependency management. Let's find out what's it got.
@@ -60,7 +63,8 @@ The API webpage can generate calls to the endpoints in Swift. I'm using (i.e. co
 
 ### Unit Tests
 ViewModels are unit tested.
-- Try the native unit testing framework and a 3rd party one as well.
+- Try the native unit testing framework first.
+- Then if there's time, refactor unit tests with a 3rd party framework.
 
 ### Persistent storage
 - [ ] Needs looking into. Ideas are SQLite or some 3rd party framework.
@@ -71,7 +75,7 @@ Networking errors need to be handled always the same way:
 2. If there is an empty or no description, a common error message is displayed.
 
 ### Localization
-- [ ] Pick some framework for localization.
+- No localization.
 
 ### Mocking
 Mock objects are needed for unit testing and easier development.
