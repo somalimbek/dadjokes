@@ -53,7 +53,7 @@ Swift Package Manager is used for dependency management. Let's find out what's i
 I chose [Swinject](https://github.com/Swinject/Swinject) because it's one popular and easy to use framework and I've worked with it already as well.
 
 ### Navigation
-- [ ] Need to look into navigation with SwiftUI
+Won't create any special navigation classes as the size of the project doesn't require any. Maybe later.
 
 ### Network Calls
 The API webpage can generate calls to the endpoints in Swift. I'm using (i.e. copying) those.
