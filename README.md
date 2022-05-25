@@ -11,7 +11,6 @@ For detailed feature description, see Functional Specification.
 ## Functional Specification
 - Home Screen
     - Two buttons (in any arrangement)
-    - Ket gomb tetszőleges elrendezésben
         - Display a random joke on a new screen
         - Display favourites
 - Random joke screen
