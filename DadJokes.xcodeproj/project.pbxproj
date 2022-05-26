@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		ACBF583627EB71AD006F021A /* DadJokesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF583527EB71AD006F021A /* DadJokesApp.swift */; };
-		ACBF583827EB71AD006F021A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF583727EB71AD006F021A /* ContentView.swift */; };
 		ACBF583A27EB71AF006F021A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBF583927EB71AF006F021A /* Assets.xcassets */; };
 		ACBF583D27EB71AF006F021A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBF583C27EB71AF006F021A /* Preview Assets.xcassets */; };
 		ACBF584727EB71AF006F021A /* DadJokesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF584627EB71AF006F021A /* DadJokesTests.swift */; };
 		ACBF585127EB71AF006F021A /* DadJokesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF585027EB71AF006F021A /* DadJokesUITests.swift */; };
 		ACBF585327EB71AF006F021A /* DadJokesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF585227EB71AF006F021A /* DadJokesUITestsLaunchTests.swift */; };
+		CF30ECAD283FADC40036ABA0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECAC283FADC40036ABA0 /* MainView.swift */; };
+		CF30ECB9283FBA190036ABA0 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECB8283FBA190036ABA0 /* DashboardView.swift */; };
+		CF30ECBB283FBA290036ABA0 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECBA283FBA290036ABA0 /* DashboardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		ACBF583227EB71AD006F021A /* Dad Jokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dad Jokes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBF583527EB71AD006F021A /* DadJokesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesApp.swift; sourceTree = "<group>"; };
-		ACBF583727EB71AD006F021A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACBF583927EB71AF006F021A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACBF583C27EB71AF006F021A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACBF584227EB71AF006F021A /* DadJokesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DadJokesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,9 @@
 		ACBF584C27EB71AF006F021A /* DadJokesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DadJokesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBF585027EB71AF006F021A /* DadJokesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesUITests.swift; sourceTree = "<group>"; };
 		ACBF585227EB71AF006F021A /* DadJokesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF30ECAC283FADC40036ABA0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CF30ECB8283FBA190036ABA0 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		CF30ECBA283FBA290036ABA0 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,8 @@
 		ACBF583427EB71AD006F021A /* DadJokes */ = {
 			isa = PBXGroup;
 			children = (
-				ACBF583527EB71AD006F021A /* DadJokesApp.swift */,
-				ACBF583727EB71AD006F021A /* ContentView.swift */,
+				CF30ECAB283FADA00036ABA0 /* App */,
+				CF30ECAE283FB3260036ABA0 /* Features */,
 				ACBF583927EB71AF006F021A /* Assets.xcassets */,
 				ACBF583B27EB71AF006F021A /* Preview Content */,
 			);
@@ -125,6 +129,40 @@
 				ACBF585227EB71AF006F021A /* DadJokesUITestsLaunchTests.swift */,
 			);
 			path = DadJokesUITests;
+			sourceTree = "<group>";
+		};
+		CF30ECAB283FADA00036ABA0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ACBF583527EB71AD006F021A /* DadJokesApp.swift */,
+				CF30ECAC283FADC40036ABA0 /* MainView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CF30ECAE283FB3260036ABA0 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CF30ECAF283FB3350036ABA0 /* Dashboard */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CF30ECAF283FB3350036ABA0 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				CF30ECB6283FB7100036ABA0 /* Presentation */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		CF30ECB6283FB7100036ABA0 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CF30ECB8283FBA190036ABA0 /* DashboardView.swift */,
+				CF30ECBA283FBA290036ABA0 /* DashboardViewModel.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACBF583827EB71AD006F021A /* ContentView.swift in Sources */,
+				CF30ECAD283FADC40036ABA0 /* MainView.swift in Sources */,
+				CF30ECB9283FBA190036ABA0 /* DashboardView.swift in Sources */,
+				CF30ECBB283FBA290036ABA0 /* DashboardViewModel.swift in Sources */,
 				ACBF583627EB71AD006F021A /* DadJokesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
