@@ -23,6 +23,7 @@
 		CF30ECDF28410DE90036ABA0 /* DashboardResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECDE28410DE90036ABA0 /* DashboardResources.swift */; };
 		CF30ECE328410E540036ABA0 /* FavoritesResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECE228410E540036ABA0 /* FavoritesResources.swift */; };
 		CF30ECE728410F440036ABA0 /* RandomJokeResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECE628410F440036ABA0 /* RandomJokeResources.swift */; };
+		CF30ECE9284119740036ABA0 /* DashboardNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECE8284119740036ABA0 /* DashboardNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		CF30ECDE28410DE90036ABA0 /* DashboardResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardResources.swift; sourceTree = "<group>"; };
 		CF30ECE228410E540036ABA0 /* FavoritesResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesResources.swift; sourceTree = "<group>"; };
 		CF30ECE628410F440036ABA0 /* RandomJokeResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeResources.swift; sourceTree = "<group>"; };
+		CF30ECE8284119740036ABA0 /* DashboardNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardNavigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				CF30ECC82840E32C0036ABA0 /* Model */,
 				CF30ECB8283FBA190036ABA0 /* DashboardView.swift */,
 				CF30ECBA283FBA290036ABA0 /* DashboardViewModel.swift */,
+				CF30ECE8284119740036ABA0 /* DashboardNavigation.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				CF30ECE728410F440036ABA0 /* RandomJokeResources.swift in Sources */,
 				CF30ECDF28410DE90036ABA0 /* DashboardResources.swift in Sources */,
 				CF30ECBB283FBA290036ABA0 /* DashboardViewModel.swift in Sources */,
+				CF30ECE9284119740036ABA0 /* DashboardNavigation.swift in Sources */,
 				CF30ECBF283FBFC00036ABA0 /* FavoritesView.swift in Sources */,
 				CF30ECCA2840E3460036ABA0 /* DashboardMenuListItem.swift in Sources */,
 				ACBF583627EB71AD006F021A /* DadJokesApp.swift in Sources */,

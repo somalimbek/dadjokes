@@ -13,7 +13,7 @@ final class DashboardViewModel: ObservableObject {
     // MARK: - Properties
     let navigationTitle = DashboardResources.featureName
     let menuList = [
-        DashboardMenuListItem(title: RandomJokeResources.featureName, navigationDestination: RandomJokeView().anyView),
-        DashboardMenuListItem(title: FavoritesResources.featureName, navigationDestination: FavoritesView().anyView)
+        DashboardMenuListItem(title: RandomJokeResources.featureName, navigationDestination: DashboardNavigation.destinationForRandomJoke),
+        DashboardMenuListItem(title: FavoritesResources.featureName, navigationDestination: DashboardNavigation.destinationForFavorites)
     ]
 }
