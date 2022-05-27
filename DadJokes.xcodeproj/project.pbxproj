@@ -16,6 +16,13 @@
 		CF30ECAD283FADC40036ABA0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECAC283FADC40036ABA0 /* MainView.swift */; };
 		CF30ECB9283FBA190036ABA0 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECB8283FBA190036ABA0 /* DashboardView.swift */; };
 		CF30ECBB283FBA290036ABA0 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECBA283FBA290036ABA0 /* DashboardViewModel.swift */; };
+		CF30ECBF283FBFC00036ABA0 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECBE283FBFC00036ABA0 /* FavoritesView.swift */; };
+		CF30ECC3283FBFE50036ABA0 /* RandomJokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECC2283FBFE50036ABA0 /* RandomJokeView.swift */; };
+		CF30ECC6283FCBBC0036ABA0 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECC5283FCBBC0036ABA0 /* View+Extensions.swift */; };
+		CF30ECCA2840E3460036ABA0 /* DashboardMenuListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECC92840E3460036ABA0 /* DashboardMenuListItem.swift */; };
+		CF30ECDF28410DE90036ABA0 /* DashboardResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECDE28410DE90036ABA0 /* DashboardResources.swift */; };
+		CF30ECE328410E540036ABA0 /* FavoritesResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECE228410E540036ABA0 /* FavoritesResources.swift */; };
+		CF30ECE728410F440036ABA0 /* RandomJokeResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECE628410F440036ABA0 /* RandomJokeResources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		CF30ECAC283FADC40036ABA0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CF30ECB8283FBA190036ABA0 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		CF30ECBA283FBA290036ABA0 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		CF30ECBE283FBFC00036ABA0 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		CF30ECC2283FBFE50036ABA0 /* RandomJokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeView.swift; sourceTree = "<group>"; };
+		CF30ECC5283FCBBC0036ABA0 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		CF30ECC92840E3460036ABA0 /* DashboardMenuListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardMenuListItem.swift; sourceTree = "<group>"; };
+		CF30ECDE28410DE90036ABA0 /* DashboardResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardResources.swift; sourceTree = "<group>"; };
+		CF30ECE228410E540036ABA0 /* FavoritesResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesResources.swift; sourceTree = "<group>"; };
+		CF30ECE628410F440036ABA0 /* RandomJokeResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeResources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				CF30ECAB283FADA00036ABA0 /* App */,
+				CF30ECC4283FC8DB0036ABA0 /* Common */,
 				CF30ECAE283FB3260036ABA0 /* Features */,
-				ACBF583927EB71AF006F021A /* Assets.xcassets */,
+				CF30ECCB2840E9700036ABA0 /* Resources */,
 				ACBF583B27EB71AF006F021A /* Preview Content */,
 			);
 			path = DadJokes;
@@ -144,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				CF30ECAF283FB3350036ABA0 /* Dashboard */,
+				CF30ECBD283FBFA00036ABA0 /* Favorites */,
+				CF30ECBC283FBF8C0036ABA0 /* RandomJoke */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -151,6 +168,7 @@
 		CF30ECAF283FB3350036ABA0 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				CF30ECDD28410DDB0036ABA0 /* Resources */,
 				CF30ECB6283FB7100036ABA0 /* Presentation */,
 			);
 			path = Dashboard;
@@ -159,10 +177,101 @@
 		CF30ECB6283FB7100036ABA0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CF30ECC82840E32C0036ABA0 /* Model */,
 				CF30ECB8283FBA190036ABA0 /* DashboardView.swift */,
 				CF30ECBA283FBA290036ABA0 /* DashboardViewModel.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CF30ECBC283FBF8C0036ABA0 /* RandomJoke */ = {
+			isa = PBXGroup;
+			children = (
+				CF30ECE528410F320036ABA0 /* Resources */,
+				CF30ECE428410F2C0036ABA0 /* Presentation */,
+			);
+			path = RandomJoke;
+			sourceTree = "<group>";
+		};
+		CF30ECBD283FBFA00036ABA0 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				CF30ECE128410E370036ABA0 /* Resources */,
+				CF30ECE028410E300036ABA0 /* Presentation */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		CF30ECC4283FC8DB0036ABA0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CF30ECC7283FCBC20036ABA0 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CF30ECC7283FCBC20036ABA0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF30ECC5283FCBBC0036ABA0 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CF30ECC82840E32C0036ABA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF30ECC92840E3460036ABA0 /* DashboardMenuListItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF30ECCB2840E9700036ABA0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ACBF583927EB71AF006F021A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CF30ECDD28410DDB0036ABA0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF30ECDE28410DE90036ABA0 /* DashboardResources.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CF30ECE028410E300036ABA0 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CF30ECBE283FBFC00036ABA0 /* FavoritesView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CF30ECE128410E370036ABA0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF30ECE228410E540036ABA0 /* FavoritesResources.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CF30ECE428410F2C0036ABA0 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CF30ECC2283FBFE50036ABA0 /* RandomJokeView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CF30ECE528410F320036ABA0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF30ECE628410F440036ABA0 /* RandomJokeResources.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +406,14 @@
 			files = (
 				CF30ECAD283FADC40036ABA0 /* MainView.swift in Sources */,
 				CF30ECB9283FBA190036ABA0 /* DashboardView.swift in Sources */,
+				CF30ECC3283FBFE50036ABA0 /* RandomJokeView.swift in Sources */,
+				CF30ECC6283FCBBC0036ABA0 /* View+Extensions.swift in Sources */,
+				CF30ECE328410E540036ABA0 /* FavoritesResources.swift in Sources */,
+				CF30ECE728410F440036ABA0 /* RandomJokeResources.swift in Sources */,
+				CF30ECDF28410DE90036ABA0 /* DashboardResources.swift in Sources */,
 				CF30ECBB283FBA290036ABA0 /* DashboardViewModel.swift in Sources */,
+				CF30ECBF283FBFC00036ABA0 /* FavoritesView.swift in Sources */,
+				CF30ECCA2840E3460036ABA0 /* DashboardMenuListItem.swift in Sources */,
 				ACBF583627EB71AD006F021A /* DadJokesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
