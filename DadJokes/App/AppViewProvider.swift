@@ -6,7 +6,25 @@
 //
 
 import Foundation
+import SwiftUI
 
-enum AppViewProvider: ViewProvider {
-    static let rootView = DashboardViewProvider.rootView
+protocol AppViewProvider: ViewProvider {
+    var dashboard: AnyView { get }
+}
+
+struct AppViewProviderImpl {
+    
+    // MARK: - Properties
+    private let dashboardViewProvider: DashboardViewProvider
+    
+    // MARK: - Init
+    init(dashboardViewProvider: DashboardViewProvider) {
+        self.dashboardViewProvider = dashboardViewProvider
+    }
+}
+
+// MARK: - AppViewProvider
+extension AppViewProviderImpl: AppViewProvider {
+    var rootView: AnyView { AppView(viewModel: AppViewModel(viewProvider: self)).anyView }
+    var dashboard: AnyView { dashboardViewProvider.rootView }
 }

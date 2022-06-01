@@ -17,6 +17,9 @@
 		CF210EEA284510CF00C1D35D /* ViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EE9284510CF00C1D35D /* ViewProvider.swift */; };
 		CF210EF02845144000C1D35D /* FavoritesViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EEF2845144000C1D35D /* FavoritesViewProvider.swift */; };
 		CF210EF22845147F00C1D35D /* RandomJokeViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EF12845147F00C1D35D /* RandomJokeViewProvider.swift */; };
+		CF210EF42846143600C1D35D /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EF32846143600C1D35D /* AppViewModel.swift */; };
+		CF210EF828461DBE00C1D35D /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EF728461DBE00C1D35D /* AppView.swift */; };
+		CF210EFA2847A40200C1D35D /* ObservableObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EF92847A40200C1D35D /* ObservableObject+Extensions.swift */; };
 		CF30ECB9283FBA190036ABA0 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECB8283FBA190036ABA0 /* DashboardView.swift */; };
 		CF30ECBB283FBA290036ABA0 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECBA283FBA290036ABA0 /* DashboardViewModel.swift */; };
 		CF30ECBF283FBFC00036ABA0 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECBE283FBFC00036ABA0 /* FavoritesView.swift */; };
@@ -60,6 +63,9 @@
 		CF210EE9284510CF00C1D35D /* ViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProvider.swift; sourceTree = "<group>"; };
 		CF210EEF2845144000C1D35D /* FavoritesViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewProvider.swift; sourceTree = "<group>"; };
 		CF210EF12845147F00C1D35D /* RandomJokeViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeViewProvider.swift; sourceTree = "<group>"; };
+		CF210EF32846143600C1D35D /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		CF210EF728461DBE00C1D35D /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		CF210EF92847A40200C1D35D /* ObservableObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableObject+Extensions.swift"; sourceTree = "<group>"; };
 		CF30ECB8283FBA190036ABA0 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		CF30ECBA283FBA290036ABA0 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		CF30ECBE283FBFC00036ABA0 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
@@ -166,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				ACBF583527EB71AD006F021A /* DadJokesApp.swift */,
+				CF210EF728461DBE00C1D35D /* AppView.swift */,
+				CF210EF32846143600C1D35D /* AppViewModel.swift */,
 				CF210EE728450FD000C1D35D /* AppViewProvider.swift */,
 			);
 			path = App;
@@ -232,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				CF30ECC5283FCBBC0036ABA0 /* View+Extensions.swift */,
+				CF210EF92847A40200C1D35D /* ObservableObject+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -425,7 +434,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF30ECB9283FBA190036ABA0 /* DashboardView.swift in Sources */,
+				CF210EFA2847A40200C1D35D /* ObservableObject+Extensions.swift in Sources */,
 				CF30ECC3283FBFE50036ABA0 /* RandomJokeView.swift in Sources */,
+				CF210EF828461DBE00C1D35D /* AppView.swift in Sources */,
 				CF30ECC6283FCBBC0036ABA0 /* View+Extensions.swift in Sources */,
 				CF210EF02845144000C1D35D /* FavoritesViewProvider.swift in Sources */,
 				CF30ECE328410E540036ABA0 /* FavoritesResources.swift in Sources */,
@@ -434,6 +445,7 @@
 				CF30ECDF28410DE90036ABA0 /* DashboardResources.swift in Sources */,
 				CF30ECBB283FBA290036ABA0 /* DashboardViewModel.swift in Sources */,
 				CF30ECE9284119740036ABA0 /* DashboardViewProvider.swift in Sources */,
+				CF210EF42846143600C1D35D /* AppViewModel.swift in Sources */,
 				CF210EE828450FD000C1D35D /* AppViewProvider.swift in Sources */,
 				CF30ECBF283FBFC00036ABA0 /* FavoritesView.swift in Sources */,
 				CF210EEA284510CF00C1D35D /* ViewProvider.swift in Sources */,

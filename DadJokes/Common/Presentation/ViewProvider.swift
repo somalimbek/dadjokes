@@ -9,5 +9,5 @@ import Foundation
 import SwiftUI
 
 protocol ViewProvider {
-    static var rootView: AnyView { get }
+    var rootView: AnyView { get }
 }

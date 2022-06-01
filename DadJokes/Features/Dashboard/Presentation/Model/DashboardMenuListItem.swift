@@ -8,19 +8,10 @@
 import Foundation
 import SwiftUI
 
-struct DashboardMenuListItem {
+struct DashboardMenuListItem: Identifiable {
     
-    // MARK: - Properties
+    // MARK: - Public Properties
+    let id = UUID()
     let title: String
     let navigationDestination: AnyView
-}
-
-// MARK: - Identifiable
-extension DashboardMenuListItem: Identifiable {
-    private static var nextId = 0
-    var id: Int {
-        let id = Self.nextId
-        Self.nextId += 1
-        return id
-    }
 }

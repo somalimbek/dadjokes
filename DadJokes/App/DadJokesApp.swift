@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct DadJokesApp: App {
+    
+    let viewProvider: AppViewProvider = AppViewProviderImpl(dashboardViewProvider: DashboardViewProviderImpl(randomJokeViewProvider: RandomJokeViewProviderImpl(), favoritesViewProvider: FavoritesViewProviderImpl()))
+
     var body: some Scene {
         WindowGroup {
-            AppViewProvider.rootView
+            viewProvider.rootView
         }
     }
 }

@@ -6,7 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
 
-enum FavoritesViewProvider: ViewProvider {
-    static let rootView = FavoritesView().anyView
+protocol FavoritesViewProvider: ViewProvider { }
+
+struct FavoritesViewProviderImpl { }
+
+extension FavoritesViewProviderImpl: FavoritesViewProvider {
+    var rootView: AnyView { FavoritesView().anyView }
 }

@@ -10,7 +10,12 @@ import SwiftUI
 struct DashboardView: View {
     
     // MARK: - Properties
-    @StateObject private var viewModel = DashboardViewModel()
+    @StateObject private var viewModel: DashboardViewModel
+    
+    // MARK: - Init
+    init(viewModel: DashboardViewModel) {
+        self._viewModel = viewModel.wrappedInStateObject
+    }
     
     // MARK: - Body
     var body: some View {
@@ -27,7 +32,10 @@ struct DashboardView: View {
 
 // MARK: - Preview
 struct DashboardView_Previews: PreviewProvider {
+    
+    static let dashboardViewModel = DashboardViewModel(viewProvider: DashboardViewProviderImpl(randomJokeViewProvider: RandomJokeViewProviderImpl(), favoritesViewProvider: FavoritesViewProviderImpl()))
+    
     static var previews: some View {
-        DashboardView()
+        DashboardView(viewModel: dashboardViewModel)
     }
 }

@@ -10,10 +10,26 @@ import SwiftUI
 
 final class DashboardViewModel: ObservableObject {
     
-    // MARK: - Properties
+    // MARK: - Public Properties
     let navigationTitle = DashboardResources.featureName
-    let menuList = [
-        DashboardMenuListItem(title: RandomJokeResources.featureName, navigationDestination: DashboardViewProvider.randomJoke),
-        DashboardMenuListItem(title: FavoritesResources.featureName, navigationDestination: DashboardViewProvider.favorites)
-    ]
+    let menuList: [DashboardMenuListItem]
+    
+    // MARK: - Private Properties
+    private let viewProvider: DashboardViewProvider
+    
+    // MARK: - Init
+    init(viewProvider: DashboardViewProvider) {
+        self.viewProvider = viewProvider
+        self.menuList = Self.buildMenuList(viewProvider: viewProvider)
+    }
+}
+
+// MARK: - Private
+private extension DashboardViewModel {
+    static func buildMenuList(viewProvider: DashboardViewProvider) -> [DashboardMenuListItem] {
+        return [
+            DashboardMenuListItem(title: RandomJokeResources.featureName, navigationDestination: viewProvider.randomJoke),
+            DashboardMenuListItem(title: FavoritesResources.featureName, navigationDestination: viewProvider.favorites)
+        ]
+    }
 }

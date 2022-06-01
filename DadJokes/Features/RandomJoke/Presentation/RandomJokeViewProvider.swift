@@ -6,7 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
 
-enum RandomJokeViewProvider: ViewProvider {
-    static let rootView = RandomJokeView().anyView
+protocol RandomJokeViewProvider: ViewProvider { }
+
+struct RandomJokeViewProviderImpl { }
+
+extension RandomJokeViewProviderImpl: RandomJokeViewProvider {
+    var rootView: AnyView { RandomJokeView().anyView }
 }
