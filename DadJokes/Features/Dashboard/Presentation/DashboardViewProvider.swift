@@ -24,7 +24,7 @@ struct DashboardViewProviderImpl {
 }
 
 extension DashboardViewProviderImpl: DashboardViewProvider {
-    var rootView: AnyView { DashboardView(viewModel: DashboardViewModel(viewProvider: self)).anyView }
+    var rootView: AnyView { DashboardView(viewModel: DashboardViewModelImpl(viewProvider: self)).anyView }
     var randomJoke: AnyView { randomJokeViewProvider.rootView }
     var favorites: AnyView { favoritesViewProvider.rootView }
 }

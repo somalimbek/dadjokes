@@ -8,7 +8,12 @@
 import Foundation
 import SwiftUI
 
-final class DashboardViewModel: ObservableObject {
+protocol DashboardViewModel: ObservableObject {
+    var navigationTitle: String { get }
+    var menuList: [DashboardMenuListItem] { get }
+}
+
+final class DashboardViewModelImpl {
     
     // MARK: - Public Properties
     let navigationTitle = DashboardResources.featureName
@@ -24,8 +29,11 @@ final class DashboardViewModel: ObservableObject {
     }
 }
 
+// MARK: - DashboardViewModel
+extension DashboardViewModelImpl: DashboardViewModel { }
+
 // MARK: - Private
-private extension DashboardViewModel {
+private extension DashboardViewModelImpl {
     static func buildMenuList(viewProvider: DashboardViewProvider) -> [DashboardMenuListItem] {
         return [
             DashboardMenuListItem(title: RandomJokeResources.featureName, navigationDestination: viewProvider.randomJoke),
