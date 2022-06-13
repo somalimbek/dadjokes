@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 protocol AppViewModel: ObservableObject {
-    var dashboard: AnyView { get }
+    var dashboard: Destination { get }
 }
 
 final class AppViewModelImpl {
@@ -25,5 +25,5 @@ final class AppViewModelImpl {
 
 // MARK: - Public
 extension AppViewModelImpl: AppViewModel {
-    var dashboard: AnyView { viewProvider.dashboard }
+    var dashboard: Destination { viewProvider.dashboard }
 }

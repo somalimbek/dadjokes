@@ -13,5 +13,5 @@ protocol RandomJokeViewProvider: ViewProvider { }
 struct RandomJokeViewProviderImpl { }
 
 extension RandomJokeViewProviderImpl: RandomJokeViewProvider {
-    var rootView: AnyView { RandomJokeView().anyView }
+    var rootView: Destination { RandomJokeView().asDestination }
 }

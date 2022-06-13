@@ -13,5 +13,5 @@ struct DashboardMenuListItem: Identifiable {
     // MARK: - Public Properties
     let id = UUID()
     let title: String
-    let navigationDestination: AnyView
+    let navigationDestination: Destination
 }

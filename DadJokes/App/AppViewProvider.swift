@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 protocol AppViewProvider: ViewProvider {
-    var dashboard: AnyView { get }
+    var dashboard: Destination { get }
 }
 
 struct AppViewProviderImpl {
@@ -25,6 +25,6 @@ struct AppViewProviderImpl {
 
 // MARK: - AppViewProvider
 extension AppViewProviderImpl: AppViewProvider {
-    var rootView: AnyView { AppView(viewModel: AppViewModelImpl(viewProvider: self)).anyView }
-    var dashboard: AnyView { dashboardViewProvider.rootView }
+    var rootView: Destination { AppView(viewModel: AppViewModelImpl(viewProvider: self)).asDestination }
+    var dashboard: Destination { dashboardViewProvider.rootView }
 }

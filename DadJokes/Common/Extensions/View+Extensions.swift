@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 extension View {
-    var anyView: AnyView {
+    var asDestination: Destination {
         AnyView(self)
     }
 }

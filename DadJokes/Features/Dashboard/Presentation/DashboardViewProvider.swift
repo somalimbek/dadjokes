@@ -9,8 +9,8 @@ import Foundation
 import SwiftUI
 
 protocol DashboardViewProvider: ViewProvider {
-    var randomJoke: AnyView { get }
-    var favorites: AnyView { get }
+    var randomJoke: Destination { get }
+    var favorites: Destination { get }
 }
 
 struct DashboardViewProviderImpl {
@@ -24,7 +24,7 @@ struct DashboardViewProviderImpl {
 }
 
 extension DashboardViewProviderImpl: DashboardViewProvider {
-    var rootView: AnyView { DashboardView(viewModel: DashboardViewModelImpl(viewProvider: self)).anyView }
-    var randomJoke: AnyView { randomJokeViewProvider.rootView }
-    var favorites: AnyView { favoritesViewProvider.rootView }
+    var rootView: Destination { DashboardView(viewModel: DashboardViewModelImpl(viewProvider: self)).asDestination }
+    var randomJoke: Destination { randomJokeViewProvider.rootView }
+    var favorites: Destination { favoritesViewProvider.rootView }
 }

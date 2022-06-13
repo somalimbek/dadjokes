@@ -13,5 +13,5 @@ protocol FavoritesViewProvider: ViewProvider { }
 struct FavoritesViewProviderImpl { }
 
 extension FavoritesViewProviderImpl: FavoritesViewProvider {
-    var rootView: AnyView { FavoritesView().anyView }
+    var rootView: Destination { FavoritesView().asDestination }
 }

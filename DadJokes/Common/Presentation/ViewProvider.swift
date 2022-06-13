@@ -8,6 +8,8 @@
 import Foundation
 import SwiftUI
 
+typealias Destination = AnyView
+
 protocol ViewProvider {
-    var rootView: AnyView { get }
+    var rootView: Destination { get }
 }
