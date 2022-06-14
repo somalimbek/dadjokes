@@ -5,7 +5,7 @@
 //  Created by Soma Limbek on 2022. 05. 30..
 //
 
-import Foundation
+import Resolver
 import SwiftUI
 
 protocol AppViewProvider: ViewProvider {
@@ -25,6 +25,6 @@ struct AppViewProviderImpl {
 
 // MARK: - AppViewProvider
 extension AppViewProviderImpl: AppViewProvider {
-    var rootView: Destination { AppView(viewModel: AppViewModel(viewProvider: self)).asDestination }
+    var rootView: Destination { Resolver.resolve(AppView.self).asDestination }
     var dashboard: Destination { dashboardViewProvider.rootView }
 }

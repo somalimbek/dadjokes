@@ -5,7 +5,7 @@
 //  Created by Soma Limbek on 2022. 05. 30..
 //
 
-import Foundation
+import Resolver
 import SwiftUI
 
 protocol FavoritesViewProvider: ViewProvider { }
@@ -13,5 +13,5 @@ protocol FavoritesViewProvider: ViewProvider { }
 struct FavoritesViewProviderImpl { }
 
 extension FavoritesViewProviderImpl: FavoritesViewProvider {
-    var rootView: Destination { FavoritesView().asDestination }
+    var rootView: Destination { Resolver.resolve(FavoritesView.self).asDestination }
 }

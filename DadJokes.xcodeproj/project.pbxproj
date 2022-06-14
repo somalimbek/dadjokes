@@ -31,6 +31,11 @@
 		CF30ECE728410F440036ABA0 /* RandomJokeResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECE628410F440036ABA0 /* RandomJokeResources.swift */; };
 		CF30ECE9284119740036ABA0 /* DashboardViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECE8284119740036ABA0 /* DashboardViewProvider.swift */; };
 		CF3F61482858C30700238772 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F61472858C30700238772 /* ViewModel.swift */; };
+		CF3F614B2858C5DD00238772 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = CF3F614A2858C5DD00238772 /* Resolver */; };
+		CF3F614F2858C62500238772 /* App+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F614E2858C62500238772 /* App+Injection.swift */; };
+		CF3F61522858C7F100238772 /* Dashboard+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F61512858C7F100238772 /* Dashboard+Injection.swift */; };
+		CF3F61552858C9AB00238772 /* Favorites+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F61542858C9AB00238772 /* Favorites+Injection.swift */; };
+		CF3F61582858CA8B00238772 /* RandomJoke+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F61572858CA8B00238772 /* RandomJoke+Injection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +83,10 @@
 		CF30ECE628410F440036ABA0 /* RandomJokeResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeResources.swift; sourceTree = "<group>"; };
 		CF30ECE8284119740036ABA0 /* DashboardViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewProvider.swift; sourceTree = "<group>"; };
 		CF3F61472858C30700238772 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CF3F614E2858C62500238772 /* App+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Injection.swift"; sourceTree = "<group>"; };
+		CF3F61512858C7F100238772 /* Dashboard+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dashboard+Injection.swift"; sourceTree = "<group>"; };
+		CF3F61542858C9AB00238772 /* Favorites+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+Injection.swift"; sourceTree = "<group>"; };
+		CF3F61572858CA8B00238772 /* RandomJoke+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomJoke+Injection.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF3F614B2858C5DD00238772 /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,10 +184,9 @@
 		CF30ECAB283FADA00036ABA0 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CF3F614C2858C5F500238772 /* DI */,
+				CF3F614D2858C60900238772 /* Presentation */,
 				ACBF583527EB71AD006F021A /* DadJokesApp.swift */,
-				CF210EF728461DBE00C1D35D /* AppView.swift */,
-				CF210EF32846143600C1D35D /* AppViewModel.swift */,
-				CF210EE728450FD000C1D35D /* AppViewProvider.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -195,6 +204,7 @@
 		CF30ECAF283FB3350036ABA0 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				CF3F61502858C7BD00238772 /* DI */,
 				CF30ECB6283FB7100036ABA0 /* Presentation */,
 				CF30ECDD28410DDB0036ABA0 /* Resources */,
 			);
@@ -215,6 +225,7 @@
 		CF30ECBC283FBF8C0036ABA0 /* RandomJoke */ = {
 			isa = PBXGroup;
 			children = (
+				CF3F61562858CA7F00238772 /* DI */,
 				CF30ECE428410F2C0036ABA0 /* Presentation */,
 				CF30ECE528410F320036ABA0 /* Resources */,
 			);
@@ -224,6 +235,7 @@
 		CF30ECBD283FBFA00036ABA0 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
+				CF3F61532858C99B00238772 /* DI */,
 				CF30ECE028410E300036ABA0 /* Presentation */,
 				CF30ECE128410E370036ABA0 /* Resources */,
 			);
@@ -306,6 +318,48 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		CF3F614C2858C5F500238772 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				CF3F614E2858C62500238772 /* App+Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		CF3F614D2858C60900238772 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CF210EF728461DBE00C1D35D /* AppView.swift */,
+				CF210EF32846143600C1D35D /* AppViewModel.swift */,
+				CF210EE728450FD000C1D35D /* AppViewProvider.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CF3F61502858C7BD00238772 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				CF3F61512858C7F100238772 /* Dashboard+Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		CF3F61532858C99B00238772 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				CF3F61542858C9AB00238772 /* Favorites+Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		CF3F61562858CA7F00238772 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				CF3F61572858CA8B00238772 /* RandomJoke+Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,6 +376,9 @@
 			dependencies = (
 			);
 			name = DadJokes;
+			packageProductDependencies = (
+				CF3F614A2858C5DD00238772 /* Resolver */,
+			);
 			productName = DadJokes;
 			productReference = ACBF583227EB71AD006F021A /* Dad Jokes.app */;
 			productType = "com.apple.product-type.application";
@@ -394,6 +451,9 @@
 				Base,
 			);
 			mainGroup = ACBF582927EB71AD006F021A;
+			packageReferences = (
+				CF3F61492858C5DD00238772 /* XCRemoteSwiftPackageReference "Resolver" */,
+			);
 			productRefGroup = ACBF583327EB71AD006F021A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -437,9 +497,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF30ECB9283FBA190036ABA0 /* DashboardView.swift in Sources */,
+				CF3F61552858C9AB00238772 /* Favorites+Injection.swift in Sources */,
 				CF210EFA2847A40200C1D35D /* ObservableObject+Extensions.swift in Sources */,
+				CF3F614F2858C62500238772 /* App+Injection.swift in Sources */,
+				CF3F61582858CA8B00238772 /* RandomJoke+Injection.swift in Sources */,
 				CF30ECC3283FBFE50036ABA0 /* RandomJokeView.swift in Sources */,
 				CF210EF828461DBE00C1D35D /* AppView.swift in Sources */,
+				CF3F61522858C7F100238772 /* Dashboard+Injection.swift in Sources */,
 				CF30ECC6283FCBBC0036ABA0 /* View+Extensions.swift in Sources */,
 				CF210EF02845144000C1D35D /* FavoritesViewProvider.swift in Sources */,
 				CF30ECE328410E540036ABA0 /* FavoritesResources.swift in Sources */,
@@ -781,6 +845,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF3F61492858C5DD00238772 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF3F614A2858C5DD00238772 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF3F61492858C5DD00238772 /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACBF582A27EB71AD006F021A /* Project object */;
 }

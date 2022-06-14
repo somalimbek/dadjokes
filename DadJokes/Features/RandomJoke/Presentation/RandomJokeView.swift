@@ -5,6 +5,7 @@
 //  Created by Soma Limbek on 2022. 05. 26..
 //
 
+import Resolver
 import SwiftUI
 
 struct RandomJokeView: View {
@@ -15,6 +16,6 @@ struct RandomJokeView: View {
 
 struct RandomJokeView_Previews: PreviewProvider {
     static var previews: some View {
-        RandomJokeView()
+        Resolver.resolve(RandomJokeView.self)
     }
 }

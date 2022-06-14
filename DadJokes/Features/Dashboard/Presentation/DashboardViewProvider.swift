@@ -5,7 +5,7 @@
 //  Created by Soma Limbek on 2022. 05. 27..
 //
 
-import Foundation
+import Resolver
 import SwiftUI
 
 protocol DashboardViewProvider: ViewProvider {
@@ -24,7 +24,7 @@ struct DashboardViewProviderImpl {
 }
 
 extension DashboardViewProviderImpl: DashboardViewProvider {
-    var rootView: Destination { DashboardView(viewModel: DashboardViewModel(viewProvider: self)).asDestination }
+    var rootView: Destination { Resolver.resolve(DashboardView.self).asDestination }
     var randomJoke: Destination { randomJokeViewProvider.rootView }
     var favorites: Destination { favoritesViewProvider.rootView }
 }

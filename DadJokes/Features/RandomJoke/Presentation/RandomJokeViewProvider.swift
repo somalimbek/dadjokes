@@ -5,7 +5,7 @@
 //  Created by Soma Limbek on 2022. 05. 30..
 //
 
-import Foundation
+import Resolver
 import SwiftUI
 
 protocol RandomJokeViewProvider: ViewProvider { }
@@ -13,5 +13,5 @@ protocol RandomJokeViewProvider: ViewProvider { }
 struct RandomJokeViewProviderImpl { }
 
 extension RandomJokeViewProviderImpl: RandomJokeViewProvider {
-    var rootView: Destination { RandomJokeView().asDestination }
+    var rootView: Destination { Resolver.resolve(RandomJokeView.self).asDestination }
 }

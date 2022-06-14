@@ -5,6 +5,7 @@
 //  Created by Soma Limbek on 2022. 05. 31..
 //
 
+import Resolver
 import SwiftUI
 
 struct AppView: View {
@@ -26,9 +27,7 @@ struct AppView: View {
 // MARK: - Preview
 struct AppView_Previews: PreviewProvider {
     
-    static let appViewModel = AppViewModel(viewProvider: AppViewProviderImpl(dashboardViewProvider: DashboardViewProviderImpl(randomJokeViewProvider: RandomJokeViewProviderImpl(), favoritesViewProvider: FavoritesViewProviderImpl())))
-    
     static var previews: some View {
-        AppView(viewModel: appViewModel)
+        Resolver.resolve(AppView.self)
     }
 }

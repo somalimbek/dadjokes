@@ -5,13 +5,14 @@
 //  Created by Soma Limbek on 2022. 03. 23..
 //
 
+import Resolver
 import SwiftUI
 
 @main
 struct DadJokesApp: App {
     
-    let viewProvider: AppViewProvider = AppViewProviderImpl(dashboardViewProvider: DashboardViewProviderImpl(randomJokeViewProvider: RandomJokeViewProviderImpl(), favoritesViewProvider: FavoritesViewProviderImpl()))
-
+    let viewProvider: AppViewProvider = Resolver.resolve()
+    
     var body: some Scene {
         WindowGroup {
             viewProvider.rootView

@@ -5,6 +5,7 @@
 //  Created by Soma Limbek on 2022. 05. 26..
 //
 
+import Resolver
 import SwiftUI
 
 struct DashboardView: View {
@@ -33,9 +34,7 @@ struct DashboardView: View {
 // MARK: - Preview
 struct DashboardView_Previews: PreviewProvider {
     
-    static let dashboardViewModel = DashboardViewModel(viewProvider: DashboardViewProviderImpl(randomJokeViewProvider: RandomJokeViewProviderImpl(), favoritesViewProvider: FavoritesViewProviderImpl()))
-    
     static var previews: some View {
-        DashboardView(viewModel: dashboardViewModel)
+        Resolver.resolve(DashboardView.self)
     }
 }
