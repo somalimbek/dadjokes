@@ -8,11 +8,7 @@
 import Foundation
 import SwiftUI
 
-protocol AppViewModel: ObservableObject {
-    var dashboard: Destination { get }
-}
-
-final class AppViewModelImpl {
+final class AppViewModel: ViewModel {
     
     // MARK: - Private properties
     private let viewProvider: AppViewProvider
@@ -24,6 +20,6 @@ final class AppViewModelImpl {
 }
 
 // MARK: - Public
-extension AppViewModelImpl: AppViewModel {
+extension AppViewModel {
     var dashboard: Destination { viewProvider.dashboard }
 }

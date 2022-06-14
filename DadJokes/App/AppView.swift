@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct AppView<ViewModel: AppViewModel>: View {
+struct AppView: View {
     
     // MARK: - Properties
-    @StateObject private var viewModel: ViewModel
+    @StateObject private var viewModel: AppViewModel
     
     // MARK: - Init
-    init(viewModel: ViewModel) {
+    init(viewModel: AppViewModel) {
         self._viewModel = viewModel.wrappedInStateObject
     }
     
@@ -26,7 +26,7 @@ struct AppView<ViewModel: AppViewModel>: View {
 // MARK: - Preview
 struct AppView_Previews: PreviewProvider {
     
-    static let appViewModel = AppViewModelImpl(viewProvider: AppViewProviderImpl(dashboardViewProvider: DashboardViewProviderImpl(randomJokeViewProvider: RandomJokeViewProviderImpl(), favoritesViewProvider: FavoritesViewProviderImpl())))
+    static let appViewModel = AppViewModel(viewProvider: AppViewProviderImpl(dashboardViewProvider: DashboardViewProviderImpl(randomJokeViewProvider: RandomJokeViewProviderImpl(), favoritesViewProvider: FavoritesViewProviderImpl())))
     
     static var previews: some View {
         AppView(viewModel: appViewModel)

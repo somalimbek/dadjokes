@@ -30,6 +30,7 @@
 		CF30ECE328410E540036ABA0 /* FavoritesResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECE228410E540036ABA0 /* FavoritesResources.swift */; };
 		CF30ECE728410F440036ABA0 /* RandomJokeResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECE628410F440036ABA0 /* RandomJokeResources.swift */; };
 		CF30ECE9284119740036ABA0 /* DashboardViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECE8284119740036ABA0 /* DashboardViewProvider.swift */; };
+		CF3F61482858C30700238772 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F61472858C30700238772 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		CF30ECE228410E540036ABA0 /* FavoritesResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesResources.swift; sourceTree = "<group>"; };
 		CF30ECE628410F440036ABA0 /* RandomJokeResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeResources.swift; sourceTree = "<group>"; };
 		CF30ECE8284119740036ABA0 /* DashboardViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewProvider.swift; sourceTree = "<group>"; };
+		CF3F61472858C30700238772 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 		CF210EEB284510D300C1D35D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CF3F61472858C30700238772 /* ViewModel.swift */,
 				CF210EE9284510CF00C1D35D /* ViewProvider.swift */,
 			);
 			path = Presentation;
@@ -444,6 +447,7 @@
 				CF210EF22845147F00C1D35D /* RandomJokeViewProvider.swift in Sources */,
 				CF30ECDF28410DE90036ABA0 /* DashboardResources.swift in Sources */,
 				CF30ECBB283FBA290036ABA0 /* DashboardViewModel.swift in Sources */,
+				CF3F61482858C30700238772 /* ViewModel.swift in Sources */,
 				CF30ECE9284119740036ABA0 /* DashboardViewProvider.swift in Sources */,
 				CF210EF42846143600C1D35D /* AppViewModel.swift in Sources */,
 				CF210EE828450FD000C1D35D /* AppViewProvider.swift in Sources */,

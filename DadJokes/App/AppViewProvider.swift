@@ -25,6 +25,6 @@ struct AppViewProviderImpl {
 
 // MARK: - AppViewProvider
 extension AppViewProviderImpl: AppViewProvider {
-    var rootView: Destination { AppView(viewModel: AppViewModelImpl(viewProvider: self)).asDestination }
+    var rootView: Destination { AppView(viewModel: AppViewModel(viewProvider: self)).asDestination }
     var dashboard: Destination { dashboardViewProvider.rootView }
 }
