@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct DashboardMenuListItem: Identifiable {
     // MARK: - Public Properties

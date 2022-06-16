@@ -6,7 +6,6 @@
 //
 
 import Resolver
-import SwiftUI
 
 protocol DashboardViewProvider: ViewProvider {
     var randomJoke: Destination { get }

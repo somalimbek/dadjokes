@@ -6,7 +6,6 @@
 //
 
 import Resolver
-import SwiftUI
 
 protocol FavoritesViewProvider: ViewProvider { }
 

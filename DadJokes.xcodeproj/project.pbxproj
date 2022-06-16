@@ -34,6 +34,7 @@
 		CF3F61552858C9AB00238772 /* Favorites+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F61542858C9AB00238772 /* Favorites+Injection.swift */; };
 		CF3F61582858CA8B00238772 /* RandomJoke+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F61572858CA8B00238772 /* RandomJoke+Injection.swift */; };
 		CF3F615D285B526D00238772 /* Common+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F615C285B526D00238772 /* Common+Injection.swift */; };
+		CF3F615F285B66B000238772 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F615E285B66B000238772 /* Destination.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		CF3F61542858C9AB00238772 /* Favorites+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+Injection.swift"; sourceTree = "<group>"; };
 		CF3F61572858CA8B00238772 /* RandomJoke+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomJoke+Injection.swift"; sourceTree = "<group>"; };
 		CF3F615C285B526D00238772 /* Common+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common+Injection.swift"; sourceTree = "<group>"; };
+		CF3F615E285B66B000238772 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 		CF210EEB284510D300C1D35D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CF3F615E285B66B000238772 /* Destination.swift */,
 				CF3F61472858C30700238772 /* ViewModel.swift */,
 				CF210EE9284510CF00C1D35D /* ViewProvider.swift */,
 			);
@@ -492,6 +495,7 @@
 				CF210EF02845144000C1D35D /* FavoritesViewProvider.swift in Sources */,
 				CF30ECE328410E540036ABA0 /* FavoritesResources.swift in Sources */,
 				CF3F615D285B526D00238772 /* Common+Injection.swift in Sources */,
+				CF3F615F285B66B000238772 /* Destination.swift in Sources */,
 				CF30ECE728410F440036ABA0 /* RandomJokeResources.swift in Sources */,
 				CF210EF22845147F00C1D35D /* RandomJokeViewProvider.swift in Sources */,
 				CF30ECDF28410DE90036ABA0 /* DashboardResources.swift in Sources */,
