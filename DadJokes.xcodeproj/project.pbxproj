@@ -17,7 +17,6 @@
 		CF210EEA284510CF00C1D35D /* ViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EE9284510CF00C1D35D /* ViewProvider.swift */; };
 		CF210EF02845144000C1D35D /* FavoritesViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EEF2845144000C1D35D /* FavoritesViewProvider.swift */; };
 		CF210EF22845147F00C1D35D /* RandomJokeViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EF12845147F00C1D35D /* RandomJokeViewProvider.swift */; };
-		CF210EFA2847A40200C1D35D /* ObservableObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EF92847A40200C1D35D /* ObservableObject+Extensions.swift */; };
 		CF30ECB9283FBA190036ABA0 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECB8283FBA190036ABA0 /* DashboardView.swift */; };
 		CF30ECBB283FBA290036ABA0 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECBA283FBA290036ABA0 /* DashboardViewModel.swift */; };
 		CF30ECBF283FBFC00036ABA0 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECBE283FBFC00036ABA0 /* FavoritesView.swift */; };
@@ -68,7 +67,6 @@
 		CF210EE9284510CF00C1D35D /* ViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProvider.swift; sourceTree = "<group>"; };
 		CF210EEF2845144000C1D35D /* FavoritesViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewProvider.swift; sourceTree = "<group>"; };
 		CF210EF12845147F00C1D35D /* RandomJokeViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeViewProvider.swift; sourceTree = "<group>"; };
-		CF210EF92847A40200C1D35D /* ObservableObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableObject+Extensions.swift"; sourceTree = "<group>"; };
 		CF30ECB8283FBA190036ABA0 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		CF30ECBA283FBA290036ABA0 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		CF30ECBE283FBFC00036ABA0 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
@@ -254,7 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				CF30ECC5283FCBBC0036ABA0 /* View+Extensions.swift */,
-				CF210EF92847A40200C1D35D /* ObservableObject+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -487,7 +484,6 @@
 			files = (
 				CF30ECB9283FBA190036ABA0 /* DashboardView.swift in Sources */,
 				CF3F61552858C9AB00238772 /* Favorites+Injection.swift in Sources */,
-				CF210EFA2847A40200C1D35D /* ObservableObject+Extensions.swift in Sources */,
 				CF3F614F2858C62500238772 /* App+Injection.swift in Sources */,
 				CF3F61582858CA8B00238772 /* RandomJoke+Injection.swift in Sources */,
 				CF30ECC3283FBFE50036ABA0 /* RandomJokeView.swift in Sources */,

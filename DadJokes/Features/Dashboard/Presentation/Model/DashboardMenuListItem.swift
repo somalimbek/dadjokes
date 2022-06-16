@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 struct DashboardMenuListItem: Identifiable {
-    
     // MARK: - Public Properties
     let id = UUID()
     let title: String
