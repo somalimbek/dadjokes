@@ -1,6 +1,6 @@
 # Dad Jokes
 
-This is a project I started to exercise iOS development and to try technologies I haven't used yet.
+This is a project I started to exercise iOS development and to try new technologies I haven't used yet.
 
 ## Features
 - Random joke
@@ -40,22 +40,22 @@ The aim is to exercise SwiftUI, so the plan is to implement the whole UI in Swif
 - MVP when using UIKit (if needed)
 
 ### Business Layer Architecture
-As for now, the business logic for the application is either to send an api call or store an object persistently. I will start out with a piece of the [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html): all business logic will be organized by use case classes. More components of Clean can be used if required by the size of the project in the future.
+As for now, the business logic of the application is either to send an api call or store an object persistently. I will start out with a piece of the [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html): all business logic will be organized by use case objects. More components of Clean can be used if required by the size of the project in the future.
 
-Definition for use case classes:
-- There is one separate class for every separate business logic use case (the name of the class is also use case), meaning that every use case class has exactly one well defined task.
+Definition for use case types:
+- There is one separate type for every separate business logic use case (the name of the type is also suffixed with 'UseCase'), meaning every use case type has exactly one well defined task.
 
 ### Dependency Management
 Swift Package Manager is used for dependency management. Let's find out what's it got.
 
 ### Dependency Injection
-I chose [Swinject](https://github.com/Swinject/Swinject) because it's one popular and easy to use framework and I've worked with it already as well.
+I chose [Resolver](https://github.com/hmlongco/Resolver) for handling Dependency Injection. It looks far simpler than [Swinject](https://github.com/Swinject/Swinject) so far, especially when using its property wrappers for injection.
 
 ### Navigation
-Won't create any special navigation classes as the size of the project doesn't require any. Maybe later.
+Every module has a navigation struct that's responsible for resolving the views that can be used by NavigationLinks. This layer of logic is separated from Views and ViewModels this way.
 
 ### Network Calls
-The API webpage can generate calls to the endpoints in Swift. I'm using (i.e. copying) those.
+The API webpage can generate the code of network calls to the endpoints in Swift. These are copied into the project.
 
 ### Unit Tests
 ViewModels are unit tested.
@@ -71,8 +71,10 @@ Networking errors need to be handled always the same way:
 2. If there is an empty or no description, a common error message is displayed.
 
 ### Localization
-- No localization.
+- No localization so far.
+- Using enums for holding string resources, therefore the view codes don't need to be changed when localization is implemented.
 
 ### Mocking
 Mock objects are needed for unit testing and easier development.
 - Every use case class will need to have a mock. It's needed mainly because of the unit tests.
+- Some macros may be useful to be implemented, so that mock are automatically used for debug builds.
