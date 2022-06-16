@@ -11,6 +11,7 @@ import Resolver
 extension Resolver: ResolverRegistering {
     public static func registerAllServices() {
         registerApp()
+        registerCommon()
         registerDashboard()
         registerFavorites()
         registerRandomJoke()

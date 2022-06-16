@@ -34,6 +34,7 @@
 		CF3F61522858C7F100238772 /* Dashboard+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F61512858C7F100238772 /* Dashboard+Injection.swift */; };
 		CF3F61552858C9AB00238772 /* Favorites+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F61542858C9AB00238772 /* Favorites+Injection.swift */; };
 		CF3F61582858CA8B00238772 /* RandomJoke+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F61572858CA8B00238772 /* RandomJoke+Injection.swift */; };
+		CF3F615D285B526D00238772 /* Common+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F615C285B526D00238772 /* Common+Injection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		CF3F61512858C7F100238772 /* Dashboard+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dashboard+Injection.swift"; sourceTree = "<group>"; };
 		CF3F61542858C9AB00238772 /* Favorites+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+Injection.swift"; sourceTree = "<group>"; };
 		CF3F61572858CA8B00238772 /* RandomJoke+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomJoke+Injection.swift"; sourceTree = "<group>"; };
+		CF3F615C285B526D00238772 /* Common+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common+Injection.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 		CF30ECC4283FC8DB0036ABA0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CF3F615B285B525F00238772 /* DI */,
 				CF30ECC7283FCBC20036ABA0 /* Extensions */,
 				CF210EEB284510D300C1D35D /* Presentation */,
 			);
@@ -334,6 +337,14 @@
 			isa = PBXGroup;
 			children = (
 				CF3F61572858CA8B00238772 /* RandomJoke+Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		CF3F615B285B525F00238772 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				CF3F615C285B526D00238772 /* Common+Injection.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -484,6 +495,7 @@
 				CF30ECC6283FCBBC0036ABA0 /* View+Extensions.swift in Sources */,
 				CF210EF02845144000C1D35D /* FavoritesViewProvider.swift in Sources */,
 				CF30ECE328410E540036ABA0 /* FavoritesResources.swift in Sources */,
+				CF3F615D285B526D00238772 /* Common+Injection.swift in Sources */,
 				CF30ECE728410F440036ABA0 /* RandomJokeResources.swift in Sources */,
 				CF210EF22845147F00C1D35D /* RandomJokeViewProvider.swift in Sources */,
 				CF30ECDF28410DE90036ABA0 /* DashboardResources.swift in Sources */,
