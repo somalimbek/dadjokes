@@ -17,8 +17,6 @@
 		CF210EEA284510CF00C1D35D /* ViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EE9284510CF00C1D35D /* ViewProvider.swift */; };
 		CF210EF02845144000C1D35D /* FavoritesViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EEF2845144000C1D35D /* FavoritesViewProvider.swift */; };
 		CF210EF22845147F00C1D35D /* RandomJokeViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EF12845147F00C1D35D /* RandomJokeViewProvider.swift */; };
-		CF210EF42846143600C1D35D /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EF32846143600C1D35D /* AppViewModel.swift */; };
-		CF210EF828461DBE00C1D35D /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EF728461DBE00C1D35D /* AppView.swift */; };
 		CF210EFA2847A40200C1D35D /* ObservableObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EF92847A40200C1D35D /* ObservableObject+Extensions.swift */; };
 		CF30ECB9283FBA190036ABA0 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECB8283FBA190036ABA0 /* DashboardView.swift */; };
 		CF30ECBB283FBA290036ABA0 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECBA283FBA290036ABA0 /* DashboardViewModel.swift */; };
@@ -69,8 +67,6 @@
 		CF210EE9284510CF00C1D35D /* ViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProvider.swift; sourceTree = "<group>"; };
 		CF210EEF2845144000C1D35D /* FavoritesViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewProvider.swift; sourceTree = "<group>"; };
 		CF210EF12845147F00C1D35D /* RandomJokeViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeViewProvider.swift; sourceTree = "<group>"; };
-		CF210EF32846143600C1D35D /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
-		CF210EF728461DBE00C1D35D /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		CF210EF92847A40200C1D35D /* ObservableObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableObject+Extensions.swift"; sourceTree = "<group>"; };
 		CF30ECB8283FBA190036ABA0 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		CF30ECBA283FBA290036ABA0 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
@@ -184,9 +180,9 @@
 		CF30ECAB283FADA00036ABA0 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				CF3F614C2858C5F500238772 /* DI */,
-				CF3F614D2858C60900238772 /* Presentation */,
 				ACBF583527EB71AD006F021A /* DadJokesApp.swift */,
+				CF3F614E2858C62500238772 /* App+Injection.swift */,
+				CF210EE728450FD000C1D35D /* AppViewProvider.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -316,24 +312,6 @@
 				CF30ECE628410F440036ABA0 /* RandomJokeResources.swift */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		CF3F614C2858C5F500238772 /* DI */ = {
-			isa = PBXGroup;
-			children = (
-				CF3F614E2858C62500238772 /* App+Injection.swift */,
-			);
-			path = DI;
-			sourceTree = "<group>";
-		};
-		CF3F614D2858C60900238772 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				CF210EF728461DBE00C1D35D /* AppView.swift */,
-				CF210EF32846143600C1D35D /* AppViewModel.swift */,
-				CF210EE728450FD000C1D35D /* AppViewProvider.swift */,
-			);
-			path = Presentation;
 			sourceTree = "<group>";
 		};
 		CF3F61502858C7BD00238772 /* DI */ = {
@@ -502,7 +480,6 @@
 				CF3F614F2858C62500238772 /* App+Injection.swift in Sources */,
 				CF3F61582858CA8B00238772 /* RandomJoke+Injection.swift in Sources */,
 				CF30ECC3283FBFE50036ABA0 /* RandomJokeView.swift in Sources */,
-				CF210EF828461DBE00C1D35D /* AppView.swift in Sources */,
 				CF3F61522858C7F100238772 /* Dashboard+Injection.swift in Sources */,
 				CF30ECC6283FCBBC0036ABA0 /* View+Extensions.swift in Sources */,
 				CF210EF02845144000C1D35D /* FavoritesViewProvider.swift in Sources */,
@@ -513,7 +490,6 @@
 				CF30ECBB283FBA290036ABA0 /* DashboardViewModel.swift in Sources */,
 				CF3F61482858C30700238772 /* ViewModel.swift in Sources */,
 				CF30ECE9284119740036ABA0 /* DashboardViewProvider.swift in Sources */,
-				CF210EF42846143600C1D35D /* AppViewModel.swift in Sources */,
 				CF210EE828450FD000C1D35D /* AppViewProvider.swift in Sources */,
 				CF30ECBF283FBFC00036ABA0 /* FavoritesView.swift in Sources */,
 				CF210EEA284510CF00C1D35D /* ViewProvider.swift in Sources */,

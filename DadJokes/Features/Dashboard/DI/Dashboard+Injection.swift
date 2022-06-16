@@ -17,11 +17,12 @@ extension Resolver {
 // MARK: - Presentation
 private extension Resolver {
     static func registerPresentation() {
-        register { DashboardView(viewModel: resolve()) }
+        register { DashboardView() }
         
-        register { DashboardViewModel(viewProvider: resolve()) }
+        register { DashboardViewModel() }
+            .scope(.shared)
         
-        register { DashboardViewProviderImpl(randomJokeViewProvider: resolve(), favoritesViewProvider: resolve()) }
+        register { DashboardViewProviderImpl() }
             .implements(DashboardViewProvider.self)
     }
 }

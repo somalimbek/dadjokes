@@ -16,6 +16,6 @@ struct RandomJokeView: View {
 
 struct RandomJokeView_Previews: PreviewProvider {
     static var previews: some View {
-        Resolver.resolve(RandomJokeView.self)
+        RandomJokeView()
     }
 }

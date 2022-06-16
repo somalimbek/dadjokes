@@ -14,15 +14,12 @@ protocol DashboardViewProvider: ViewProvider {
 }
 
 struct DashboardViewProviderImpl {
-    private let randomJokeViewProvider: RandomJokeViewProvider
-    private let favoritesViewProvider: FavoritesViewProvider
-    
-    init(randomJokeViewProvider: RandomJokeViewProvider, favoritesViewProvider: FavoritesViewProvider) {
-        self.randomJokeViewProvider = randomJokeViewProvider
-        self.favoritesViewProvider = favoritesViewProvider
-    }
+    // MARK: - Injected Properties
+    @Injected private var randomJokeViewProvider: RandomJokeViewProvider
+    @Injected private var favoritesViewProvider: FavoritesViewProvider
 }
 
+// MARK: - DashboardViewProvider
 extension DashboardViewProviderImpl: DashboardViewProvider {
     var rootView: Destination { Resolver.resolve(DashboardView.self).asDestination }
     var randomJoke: Destination { randomJokeViewProvider.rootView }

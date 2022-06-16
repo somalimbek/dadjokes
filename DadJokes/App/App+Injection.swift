@@ -20,16 +20,7 @@ extension Resolver: ResolverRegistering {
 // MARK: - App
 private extension Resolver {    
     static func registerApp() {
-        registerPresentation()
-    }
-    
-    // MARK: - Presentation
-    static func registerPresentation() {
-        register { AppView(viewModel: resolve()) }
-        
-        register { AppViewModel(viewProvider: resolve()) }
-        
-        register { AppViewProviderImpl(dashboardViewProvider: resolve()) }
+        register { AppViewProviderImpl() }
             .implements(AppViewProvider.self)
     }
 }
