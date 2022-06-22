@@ -9,4 +9,5 @@ import Foundation
 
 enum RandomJokeResources {
     static let featureName = "Random Joke"
+    static let description = "Tap the button to get a hilarious dad joke."
 }

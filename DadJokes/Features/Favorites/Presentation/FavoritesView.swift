@@ -10,7 +10,12 @@ import SwiftUI
 
 struct FavoritesView: View {
     var body: some View {
-        Text(FavoritesResources.featureName)
+        VStack {
+            Text(FavoritesResources.featureName)
+                .font(.title)
+                .padding()
+            Text(FavoritesResources.description)
+        }
     }
 }
 

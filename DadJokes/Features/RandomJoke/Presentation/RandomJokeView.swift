@@ -10,7 +10,12 @@ import SwiftUI
 
 struct RandomJokeView: View {
     var body: some View {
-        Text(RandomJokeResources.featureName)
+        VStack {
+            Text(RandomJokeResources.featureName)
+                .font(.title)
+                .padding()
+            Text(RandomJokeResources.description)
+        }
     }
 }
 
