@@ -18,10 +18,14 @@ extension Resolver: ResolverRegistering {
     }
 }
 
+// MARK: - Names
+extension Resolver.Name {
+    static let app = Self(CommonResources.app)
+}
+
 // MARK: - App
 private extension Resolver {    
     static func registerApp() {
-        register { AppViewProviderImpl() }
-            .implements(AppViewProvider.self)
+        register { AppViewProviderImpl() as AppViewProvider }
     }
 }

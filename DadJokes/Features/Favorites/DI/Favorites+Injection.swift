@@ -14,12 +14,17 @@ extension Resolver {
     }
 }
 
+// MARK: - Names
+extension Resolver.Name {
+    static let favorites = Self(FavoritesResources.featureName)
+}
+
 // MARK: - Presentation
 private extension Resolver {
     static func registerPresentation() {
         register { FavoritesView() }
         
-        register { FavoritesViewProviderImpl() }
-            .implements(FavoritesViewProvider.self)
+        register { FavoritesViewProviderImpl() as FavoritesViewProvider }
+            .implements(ViewProvider.self, name: .favorites)
     }
 }
