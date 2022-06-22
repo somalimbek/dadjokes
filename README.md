@@ -57,10 +57,10 @@ Every module has a navigation struct that's responsible for resolving the views 
 ### Network Calls
 The API webpage can generate the code of network calls to the endpoints in Swift. These are copied into the project.
 
-### Unit Tests
-ViewModels are unit tested.
-- Try the native unit testing framework first.
-- Then if there's time, refactor unit tests with a 3rd party framework.
+### Unit/UI Tests
+ViewModels are tested. Test them with unit tests, if there's any business logic, and write UI test if there's only UX logic. (E.g. in DashboardViewModel, there is no business logic, it just controls what features can the user navigate to. Therefore this functionality is tested with UI tests instead of Unit tests.)
+- Try the native testing framework first.
+- Then if there's time, refactor unit tests to a 3rd party framework.
 
 ### Persistent storage
 - [ ] Needs looking into. Ideas are SQLite or some 3rd party framework.
