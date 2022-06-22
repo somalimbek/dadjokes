@@ -11,7 +11,7 @@ import SwiftUI
 final class DashboardViewModel: ViewModel {
     
     // MARK: - Injected Properties
-    @Injected private var viewProvider: DashboardViewProvider
+    private let viewProvider: DashboardViewProvider = Resolver.resolve()
     
     // MARK: - Public Properties
     let navigationTitle = DashboardResources.featureName

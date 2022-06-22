@@ -14,6 +14,11 @@ extension Resolver {
     }
 }
 
+// MARK: - Names
+extension Resolver.Name {
+    static let dashboard = Self(DashboardResources.featureName)
+}
+
 // MARK: - Presentation
 private extension Resolver {
     static func registerPresentation() {
@@ -22,7 +27,7 @@ private extension Resolver {
         register { DashboardViewModel() }
             .scope(.shared)
         
-        register { DashboardViewProviderImpl() }
-            .implements(DashboardViewProvider.self)
+        register { DashboardViewProviderImpl() as DashboardViewProvider }
+            .implements(ViewProvider.self, name: .dashboard)
     }
 }

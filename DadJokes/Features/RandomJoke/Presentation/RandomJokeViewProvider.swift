@@ -6,7 +6,6 @@
 //
 
 import Resolver
-import SwiftUI
 
 protocol RandomJokeViewProvider: ViewProvider { }
 

@@ -10,9 +10,7 @@
 		ACBF583627EB71AD006F021A /* DadJokesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF583527EB71AD006F021A /* DadJokesApp.swift */; };
 		ACBF583A27EB71AF006F021A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBF583927EB71AF006F021A /* Assets.xcassets */; };
 		ACBF583D27EB71AF006F021A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBF583C27EB71AF006F021A /* Preview Assets.xcassets */; };
-		ACBF584727EB71AF006F021A /* DadJokesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF584627EB71AF006F021A /* DadJokesTests.swift */; };
-		ACBF585127EB71AF006F021A /* DadJokesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF585027EB71AF006F021A /* DadJokesUITests.swift */; };
-		ACBF585327EB71AF006F021A /* DadJokesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF585227EB71AF006F021A /* DadJokesUITestsLaunchTests.swift */; };
+		CF09F36E2860C24900AFDBA6 /* CommonResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09F36D2860C24900AFDBA6 /* CommonResources.swift */; };
 		CF210EE828450FD000C1D35D /* AppViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EE728450FD000C1D35D /* AppViewProvider.swift */; };
 		CF210EEA284510CF00C1D35D /* ViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EE9284510CF00C1D35D /* ViewProvider.swift */; };
 		CF210EF02845144000C1D35D /* FavoritesViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EEF2845144000C1D35D /* FavoritesViewProvider.swift */; };
@@ -28,23 +26,23 @@
 		CF30ECE728410F440036ABA0 /* RandomJokeResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECE628410F440036ABA0 /* RandomJokeResources.swift */; };
 		CF30ECE9284119740036ABA0 /* DashboardViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECE8284119740036ABA0 /* DashboardViewProvider.swift */; };
 		CF3F61482858C30700238772 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F61472858C30700238772 /* ViewModel.swift */; };
-		CF3F614B2858C5DD00238772 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = CF3F614A2858C5DD00238772 /* Resolver */; };
 		CF3F614F2858C62500238772 /* App+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F614E2858C62500238772 /* App+Injection.swift */; };
 		CF3F61522858C7F100238772 /* Dashboard+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F61512858C7F100238772 /* Dashboard+Injection.swift */; };
 		CF3F61552858C9AB00238772 /* Favorites+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F61542858C9AB00238772 /* Favorites+Injection.swift */; };
 		CF3F61582858CA8B00238772 /* RandomJoke+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F61572858CA8B00238772 /* RandomJoke+Injection.swift */; };
 		CF3F615D285B526D00238772 /* Common+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F615C285B526D00238772 /* Common+Injection.swift */; };
+		CF3F615F285B66B000238772 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F615E285B66B000238772 /* Destination.swift */; };
+		CF577E162861F72400E2D519 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = CF577E152861F72400E2D519 /* Resolver */; };
+		CF577E422863209400E2D519 /* DashboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF577E412863209400E2D519 /* DashboardUITests.swift */; };
+		CF577E8F2863242C00E2D519 /* AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF577E8E2863242C00E2D519 /* AppUITests.swift */; };
+		CF577E91286332AE00E2D519 /* DashboardResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECDE28410DE90036ABA0 /* DashboardResources.swift */; };
+		CF577E92286332AE00E2D519 /* FavoritesResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECE228410E540036ABA0 /* FavoritesResources.swift */; };
+		CF577E93286332AE00E2D519 /* RandomJokeResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECE628410F440036ABA0 /* RandomJokeResources.swift */; };
+		CF577E94286332AE00E2D519 /* CommonResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09F36D2860C24900AFDBA6 /* CommonResources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ACBF584327EB71AF006F021A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACBF582A27EB71AD006F021A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ACBF583127EB71AD006F021A;
-			remoteInfo = DadJokes;
-		};
-		ACBF584D27EB71AF006F021A /* PBXContainerItemProxy */ = {
+		CF577E3828631F0000E2D519 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ACBF582A27EB71AD006F021A /* Project object */;
 			proxyType = 1;
@@ -54,15 +52,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		ACBF583227EB71AD006F021A /* Dad Jokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dad Jokes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBF583227EB71AD006F021A /* DadJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DadJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBF583527EB71AD006F021A /* DadJokesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesApp.swift; sourceTree = "<group>"; };
 		ACBF583927EB71AF006F021A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACBF583C27EB71AF006F021A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		ACBF584227EB71AF006F021A /* DadJokesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DadJokesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACBF584627EB71AF006F021A /* DadJokesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesTests.swift; sourceTree = "<group>"; };
-		ACBF584C27EB71AF006F021A /* DadJokesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DadJokesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACBF585027EB71AF006F021A /* DadJokesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesUITests.swift; sourceTree = "<group>"; };
-		ACBF585227EB71AF006F021A /* DadJokesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF09F36D2860C24900AFDBA6 /* CommonResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonResources.swift; sourceTree = "<group>"; };
 		CF210EE728450FD000C1D35D /* AppViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewProvider.swift; sourceTree = "<group>"; };
 		CF210EE9284510CF00C1D35D /* ViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProvider.swift; sourceTree = "<group>"; };
 		CF210EEF2845144000C1D35D /* FavoritesViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewProvider.swift; sourceTree = "<group>"; };
@@ -83,6 +77,10 @@
 		CF3F61542858C9AB00238772 /* Favorites+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+Injection.swift"; sourceTree = "<group>"; };
 		CF3F61572858CA8B00238772 /* RandomJoke+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomJoke+Injection.swift"; sourceTree = "<group>"; };
 		CF3F615C285B526D00238772 /* Common+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common+Injection.swift"; sourceTree = "<group>"; };
+		CF3F615E285B66B000238772 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		CF577E3228631F0000E2D519 /* DadJokesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DadJokesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF577E412863209400E2D519 /* DashboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUITests.swift; sourceTree = "<group>"; };
+		CF577E8E2863242C00E2D519 /* AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,18 +88,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF3F614B2858C5DD00238772 /* Resolver in Frameworks */,
+				CF577E162861F72400E2D519 /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACBF583F27EB71AF006F021A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACBF584927EB71AF006F021A /* Frameworks */ = {
+		CF577E2F28631F0000E2D519 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,8 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				ACBF583427EB71AD006F021A /* DadJokes */,
-				ACBF584527EB71AF006F021A /* DadJokesTests */,
-				ACBF584F27EB71AF006F021A /* DadJokesUITests */,
+				CF577E3328631F0000E2D519 /* DadJokesUITests */,
 				ACBF583327EB71AD006F021A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,9 +114,8 @@
 		ACBF583327EB71AD006F021A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ACBF583227EB71AD006F021A /* Dad Jokes.app */,
-				ACBF584227EB71AF006F021A /* DadJokesTests.xctest */,
-				ACBF584C27EB71AF006F021A /* DadJokesUITests.xctest */,
+				ACBF583227EB71AD006F021A /* DadJokes.app */,
+				CF577E3228631F0000E2D519 /* DadJokesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,26 +140,10 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		ACBF584527EB71AF006F021A /* DadJokesTests */ = {
-			isa = PBXGroup;
-			children = (
-				ACBF584627EB71AF006F021A /* DadJokesTests.swift */,
-			);
-			path = DadJokesTests;
-			sourceTree = "<group>";
-		};
-		ACBF584F27EB71AF006F021A /* DadJokesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				ACBF585027EB71AF006F021A /* DadJokesUITests.swift */,
-				ACBF585227EB71AF006F021A /* DadJokesUITestsLaunchTests.swift */,
-			);
-			path = DadJokesUITests;
-			sourceTree = "<group>";
-		};
 		CF210EEB284510D300C1D35D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CF3F615E285B66B000238772 /* Destination.swift */,
 				CF3F61472858C30700238772 /* ViewModel.swift */,
 				CF210EE9284510CF00C1D35D /* ViewProvider.swift */,
 			);
@@ -202,7 +175,6 @@
 			children = (
 				CF3F61502858C7BD00238772 /* DI */,
 				CF30ECB6283FB7100036ABA0 /* Presentation */,
-				CF30ECDD28410DDB0036ABA0 /* Resources */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -223,7 +195,6 @@
 			children = (
 				CF3F61562858CA7F00238772 /* DI */,
 				CF30ECE428410F2C0036ABA0 /* Presentation */,
-				CF30ECE528410F320036ABA0 /* Resources */,
 			);
 			path = RandomJoke;
 			sourceTree = "<group>";
@@ -233,7 +204,6 @@
 			children = (
 				CF3F61532858C99B00238772 /* DI */,
 				CF30ECE028410E300036ABA0 /* Presentation */,
-				CF30ECE128410E370036ABA0 /* Resources */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -267,15 +237,8 @@
 		CF30ECCB2840E9700036ABA0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CF577E902863328100E2D519 /* Texts */,
 				ACBF583927EB71AF006F021A /* Assets.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		CF30ECDD28410DDB0036ABA0 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				CF30ECDE28410DE90036ABA0 /* DashboardResources.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -289,14 +252,6 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		CF30ECE128410E370036ABA0 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				CF30ECE228410E540036ABA0 /* FavoritesResources.swift */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		CF30ECE428410F2C0036ABA0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,14 +259,6 @@
 				CF210EF12845147F00C1D35D /* RandomJokeViewProvider.swift */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		CF30ECE528410F320036ABA0 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				CF30ECE628410F440036ABA0 /* RandomJokeResources.swift */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		CF3F61502858C7BD00238772 /* DI */ = {
@@ -346,6 +293,26 @@
 			path = DI;
 			sourceTree = "<group>";
 		};
+		CF577E3328631F0000E2D519 /* DadJokesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF577E8E2863242C00E2D519 /* AppUITests.swift */,
+				CF577E412863209400E2D519 /* DashboardUITests.swift */,
+			);
+			path = DadJokesUITests;
+			sourceTree = "<group>";
+		};
+		CF577E902863328100E2D519 /* Texts */ = {
+			isa = PBXGroup;
+			children = (
+				CF09F36D2860C24900AFDBA6 /* CommonResources.swift */,
+				CF30ECDE28410DE90036ABA0 /* DashboardResources.swift */,
+				CF30ECE228410E540036ABA0 /* FavoritesResources.swift */,
+				CF30ECE628410F440036ABA0 /* RandomJokeResources.swift */,
+			);
+			path = Texts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -363,46 +330,28 @@
 			);
 			name = DadJokes;
 			packageProductDependencies = (
-				CF3F614A2858C5DD00238772 /* Resolver */,
+				CF577E152861F72400E2D519 /* Resolver */,
 			);
 			productName = DadJokes;
-			productReference = ACBF583227EB71AD006F021A /* Dad Jokes.app */;
+			productReference = ACBF583227EB71AD006F021A /* DadJokes.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ACBF584127EB71AF006F021A /* DadJokesTests */ = {
+		CF577E3128631F0000E2D519 /* DadJokesUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ACBF585927EB71AF006F021A /* Build configuration list for PBXNativeTarget "DadJokesTests" */;
+			buildConfigurationList = CF577E3C28631F0000E2D519 /* Build configuration list for PBXNativeTarget "DadJokesUITests" */;
 			buildPhases = (
-				ACBF583E27EB71AF006F021A /* Sources */,
-				ACBF583F27EB71AF006F021A /* Frameworks */,
-				ACBF584027EB71AF006F021A /* Resources */,
+				CF577E2E28631F0000E2D519 /* Sources */,
+				CF577E2F28631F0000E2D519 /* Frameworks */,
+				CF577E3028631F0000E2D519 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				ACBF584427EB71AF006F021A /* PBXTargetDependency */,
-			);
-			name = DadJokesTests;
-			productName = DadJokesTests;
-			productReference = ACBF584227EB71AF006F021A /* DadJokesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		ACBF584B27EB71AF006F021A /* DadJokesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACBF585C27EB71AF006F021A /* Build configuration list for PBXNativeTarget "DadJokesUITests" */;
-			buildPhases = (
-				ACBF584827EB71AF006F021A /* Sources */,
-				ACBF584927EB71AF006F021A /* Frameworks */,
-				ACBF584A27EB71AF006F021A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ACBF584E27EB71AF006F021A /* PBXTargetDependency */,
+				CF577E3928631F0000E2D519 /* PBXTargetDependency */,
 			);
 			name = DadJokesUITests;
 			productName = DadJokesUITests;
-			productReference = ACBF584C27EB71AF006F021A /* DadJokesUITests.xctest */;
+			productReference = CF577E3228631F0000E2D519 /* DadJokesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -412,18 +361,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					ACBF583127EB71AD006F021A = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
-					ACBF584127EB71AF006F021A = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = ACBF583127EB71AD006F021A;
-					};
-					ACBF584B27EB71AF006F021A = {
-						CreatedOnToolsVersion = 13.2.1;
+					CF577E3128631F0000E2D519 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 						TestTargetID = ACBF583127EB71AD006F021A;
 					};
 				};
@@ -438,15 +384,14 @@
 			);
 			mainGroup = ACBF582927EB71AD006F021A;
 			packageReferences = (
-				CF3F61492858C5DD00238772 /* XCRemoteSwiftPackageReference "Resolver" */,
+				CF577E142861F72400E2D519 /* XCRemoteSwiftPackageReference "Resolver" */,
 			);
 			productRefGroup = ACBF583327EB71AD006F021A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				ACBF583127EB71AD006F021A /* DadJokes */,
-				ACBF584127EB71AF006F021A /* DadJokesTests */,
-				ACBF584B27EB71AF006F021A /* DadJokesUITests */,
+				CF577E3128631F0000E2D519 /* DadJokesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -461,14 +406,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACBF584027EB71AF006F021A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACBF584A27EB71AF006F021A /* Resources */ = {
+		CF577E3028631F0000E2D519 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -492,9 +430,11 @@
 				CF210EF02845144000C1D35D /* FavoritesViewProvider.swift in Sources */,
 				CF30ECE328410E540036ABA0 /* FavoritesResources.swift in Sources */,
 				CF3F615D285B526D00238772 /* Common+Injection.swift in Sources */,
+				CF3F615F285B66B000238772 /* Destination.swift in Sources */,
 				CF30ECE728410F440036ABA0 /* RandomJokeResources.swift in Sources */,
 				CF210EF22845147F00C1D35D /* RandomJokeViewProvider.swift in Sources */,
 				CF30ECDF28410DE90036ABA0 /* DashboardResources.swift in Sources */,
+				CF09F36E2860C24900AFDBA6 /* CommonResources.swift in Sources */,
 				CF30ECBB283FBA290036ABA0 /* DashboardViewModel.swift in Sources */,
 				CF3F61482858C30700238772 /* ViewModel.swift in Sources */,
 				CF30ECE9284119740036ABA0 /* DashboardViewProvider.swift in Sources */,
@@ -506,35 +446,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACBF583E27EB71AF006F021A /* Sources */ = {
+		CF577E2E28631F0000E2D519 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACBF584727EB71AF006F021A /* DadJokesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACBF584827EB71AF006F021A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACBF585327EB71AF006F021A /* DadJokesUITestsLaunchTests.swift in Sources */,
-				ACBF585127EB71AF006F021A /* DadJokesUITests.swift in Sources */,
+				CF577E422863209400E2D519 /* DashboardUITests.swift in Sources */,
+				CF577E92286332AE00E2D519 /* FavoritesResources.swift in Sources */,
+				CF577E94286332AE00E2D519 /* CommonResources.swift in Sources */,
+				CF577E93286332AE00E2D519 /* RandomJokeResources.swift in Sources */,
+				CF577E8F2863242C00E2D519 /* AppUITests.swift in Sources */,
+				CF577E91286332AE00E2D519 /* DashboardResources.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		ACBF584427EB71AF006F021A /* PBXTargetDependency */ = {
+		CF577E3928631F0000E2D519 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = ACBF583127EB71AD006F021A /* DadJokes */;
-			targetProxy = ACBF584327EB71AF006F021A /* PBXContainerItemProxy */;
-		};
-		ACBF584E27EB71AF006F021A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ACBF583127EB71AD006F021A /* DadJokes */;
-			targetProxy = ACBF584D27EB71AF006F021A /* PBXContainerItemProxy */;
+			targetProxy = CF577E3828631F0000E2D519 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -677,7 +608,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hu.somalimbek.dadjokes;
-				PRODUCT_NAME = "Dad Jokes";
+				PRODUCT_NAME = DadJokes;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -706,83 +637,58 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hu.somalimbek.dadjokes;
-				PRODUCT_NAME = "Dad Jokes";
+				PRODUCT_NAME = DadJokes;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		ACBF585A27EB71AF006F021A /* Debug */ = {
+		CF577E3A28631F0000E2D519 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 56M5PADWP6;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hu.somalimbek.DadJokesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DadJokes.app/DadJokes";
-			};
-			name = Debug;
-		};
-		ACBF585B27EB71AF006F021A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 56M5PADWP6;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hu.somalimbek.DadJokesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DadJokes.app/DadJokes";
-			};
-			name = Release;
-		};
-		ACBF585D27EB71AF006F021A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 56M5PADWP6;
-				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hu.somalimbek.DadJokesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = DadJokes;
 			};
 			name = Debug;
 		};
-		ACBF585E27EB71AF006F021A /* Release */ = {
+		CF577E3B28631F0000E2D519 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 56M5PADWP6;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hu.somalimbek.DadJokesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = DadJokes;
@@ -810,20 +716,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ACBF585927EB71AF006F021A /* Build configuration list for PBXNativeTarget "DadJokesTests" */ = {
+		CF577E3C28631F0000E2D519 /* Build configuration list for PBXNativeTarget "DadJokesUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ACBF585A27EB71AF006F021A /* Debug */,
-				ACBF585B27EB71AF006F021A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACBF585C27EB71AF006F021A /* Build configuration list for PBXNativeTarget "DadJokesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACBF585D27EB71AF006F021A /* Debug */,
-				ACBF585E27EB71AF006F021A /* Release */,
+				CF577E3A28631F0000E2D519 /* Debug */,
+				CF577E3B28631F0000E2D519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -831,7 +728,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CF3F61492858C5DD00238772 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+		CF577E142861F72400E2D519 /* XCRemoteSwiftPackageReference "Resolver" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hmlongco/Resolver";
 			requirement = {
@@ -842,9 +739,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CF3F614A2858C5DD00238772 /* Resolver */ = {
+		CF577E152861F72400E2D519 /* Resolver */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CF3F61492858C5DD00238772 /* XCRemoteSwiftPackageReference "Resolver" */;
+			package = CF577E142861F72400E2D519 /* XCRemoteSwiftPackageReference "Resolver" */;
 			productName = Resolver;
 		};
 /* End XCSwiftPackageProductDependency section */

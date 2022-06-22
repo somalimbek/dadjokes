@@ -14,12 +14,17 @@ extension Resolver {
     }
 }
 
+// MARK: - Names
+extension Resolver.Name {
+    static let randomJoke = Self(RandomJokeResources.featureName)
+}
+
 // MARK: - Presentation
 private extension Resolver {
     static func registerPresentation() {
         register { RandomJokeView() }
         
-        register { RandomJokeViewProviderImpl() }
-            .implements(RandomJokeViewProvider.self)
+        register { RandomJokeViewProviderImpl() as RandomJokeViewProvider }
+            .implements(ViewProvider.self, name: .randomJoke)
     }
 }

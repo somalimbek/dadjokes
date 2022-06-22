@@ -6,7 +6,6 @@
 //
 
 import Resolver
-import SwiftUI
 
 protocol DashboardViewProvider: ViewProvider {
     var randomJoke: Destination { get }
@@ -15,8 +14,8 @@ protocol DashboardViewProvider: ViewProvider {
 
 struct DashboardViewProviderImpl {
     // MARK: - Injected Properties
-    @Injected private var randomJokeViewProvider: RandomJokeViewProvider
-    @Injected private var favoritesViewProvider: FavoritesViewProvider
+    private let randomJokeViewProvider: ViewProvider = Resolver.resolve(name: .randomJoke)
+    private let favoritesViewProvider: ViewProvider = Resolver.resolve(name: .favorites)
 }
 
 // MARK: - DashboardViewProvider
