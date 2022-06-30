@@ -19,8 +19,18 @@ extension Resolver.Name {
     static let randomJoke = Self(RandomJokeResources.featureName)
 }
 
-// MARK: - Presentation
 private extension Resolver {
+    // MARK: - Data
+    static func registerData() {
+        register { RandomJokeMockDataSource() as RandomJokeDataSource }
+    }
+    
+    // MARK: - Domain
+    static func registerDomain() {
+        register { GetRandomJokeUseCaseImpl() as GetRandomJokeUseCase }
+    }
+    
+    // MARK: - Presentation
     static func registerPresentation() {
         register { RandomJokeView() }
         
