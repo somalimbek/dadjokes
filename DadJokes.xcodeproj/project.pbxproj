@@ -39,10 +39,25 @@
 		CF577E92286332AE00E2D519 /* FavoritesResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECE228410E540036ABA0 /* FavoritesResources.swift */; };
 		CF577E93286332AE00E2D519 /* RandomJokeResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30ECE628410F440036ABA0 /* RandomJokeResources.swift */; };
 		CF577E94286332AE00E2D519 /* CommonResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09F36D2860C24900AFDBA6 /* CommonResources.swift */; };
+		CF577E972865AF5400E2D519 /* GetRandomJokeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF577E962865AF5400E2D519 /* GetRandomJokeUseCase.swift */; };
+		CF577E9D2865F82800E2D519 /* RandomJokeDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF577E9C2865F82800E2D519 /* RandomJokeDomainModel.swift */; };
+		CFB591B8286C6C9C005D7009 /* RandomJokeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591B7286C6C9C005D7009 /* RandomJokeDataSource.swift */; };
+		CFB591BB286C6D47005D7009 /* RandomJokeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591BA286C6D47005D7009 /* RandomJokeDataModel.swift */; };
+		CFB591BE286C6E1C005D7009 /* RandomJokeMockDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591BD286C6E1C005D7009 /* RandomJokeMockDataSource.swift */; };
+		CFB591CE286DE09E005D7009 /* GetRandomJokeUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591CD286DE09E005D7009 /* GetRandomJokeUseCaseTests.swift */; };
+		CFB591D2286DE209005D7009 /* TestMocks+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591D1286DE209005D7009 /* TestMocks+Injection.swift */; };
+		CFB591D5286DFA55005D7009 /* ErrorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591D4286DFA55005D7009 /* ErrorMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CF577E3828631F0000E2D519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACBF582A27EB71AD006F021A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACBF583127EB71AD006F021A;
+			remoteInfo = DadJokes;
+		};
+		CFB591C7286DDFBB005D7009 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ACBF582A27EB71AD006F021A /* Project object */;
 			proxyType = 1;
@@ -81,6 +96,15 @@
 		CF577E3228631F0000E2D519 /* DadJokesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DadJokesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF577E412863209400E2D519 /* DashboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUITests.swift; sourceTree = "<group>"; };
 		CF577E8E2863242C00E2D519 /* AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests.swift; sourceTree = "<group>"; };
+		CF577E962865AF5400E2D519 /* GetRandomJokeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRandomJokeUseCase.swift; sourceTree = "<group>"; };
+		CF577E9C2865F82800E2D519 /* RandomJokeDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDomainModel.swift; sourceTree = "<group>"; };
+		CFB591B7286C6C9C005D7009 /* RandomJokeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDataSource.swift; sourceTree = "<group>"; };
+		CFB591BA286C6D47005D7009 /* RandomJokeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDataModel.swift; sourceTree = "<group>"; };
+		CFB591BD286C6E1C005D7009 /* RandomJokeMockDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeMockDataSource.swift; sourceTree = "<group>"; };
+		CFB591C3286DDFBB005D7009 /* DadJokesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DadJokesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB591CD286DE09E005D7009 /* GetRandomJokeUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRandomJokeUseCaseTests.swift; sourceTree = "<group>"; };
+		CFB591D1286DE209005D7009 /* TestMocks+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestMocks+Injection.swift"; sourceTree = "<group>"; };
+		CFB591D4286DFA55005D7009 /* ErrorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +123,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CFB591C0286DDFBB005D7009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -106,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				ACBF583427EB71AD006F021A /* DadJokes */,
+				CFB591C4286DDFBB005D7009 /* DadJokesTests */,
 				CF577E3328631F0000E2D519 /* DadJokesUITests */,
 				ACBF583327EB71AD006F021A /* Products */,
 			);
@@ -116,6 +148,7 @@
 			children = (
 				ACBF583227EB71AD006F021A /* DadJokes.app */,
 				CF577E3228631F0000E2D519 /* DadJokesUITests.xctest */,
+				CFB591C3286DDFBB005D7009 /* DadJokesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,7 +226,9 @@
 		CF30ECBC283FBF8C0036ABA0 /* RandomJoke */ = {
 			isa = PBXGroup;
 			children = (
+				CFB591B6286C6C23005D7009 /* Data */,
 				CF3F61562858CA7F00238772 /* DI */,
+				CF577E952865AF2500E2D519 /* Domain */,
 				CF30ECE428410F2C0036ABA0 /* Presentation */,
 			);
 			path = RandomJoke;
@@ -313,6 +348,83 @@
 			path = Texts;
 			sourceTree = "<group>";
 		};
+		CF577E952865AF2500E2D519 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CF577E9B2865F41A00E2D519 /* Model */,
+				CF577E962865AF5400E2D519 /* GetRandomJokeUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CF577E9B2865F41A00E2D519 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF577E9C2865F82800E2D519 /* RandomJokeDomainModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFB591B6286C6C23005D7009 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CFB591B9286C6D3D005D7009 /* Model */,
+				CFB591B7286C6C9C005D7009 /* RandomJokeDataSource.swift */,
+				CFB591BD286C6E1C005D7009 /* RandomJokeMockDataSource.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CFB591B9286C6D3D005D7009 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFB591BA286C6D47005D7009 /* RandomJokeDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFB591C4286DDFBB005D7009 /* DadJokesTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFB591CC286DE07C005D7009 /* RandomJoke */,
+				CFB591CF286DE18A005D7009 /* TestMocks */,
+			);
+			path = DadJokesTests;
+			sourceTree = "<group>";
+		};
+		CFB591CC286DE07C005D7009 /* RandomJoke */ = {
+			isa = PBXGroup;
+			children = (
+				CFB591CD286DE09E005D7009 /* GetRandomJokeUseCaseTests.swift */,
+			);
+			path = RandomJoke;
+			sourceTree = "<group>";
+		};
+		CFB591CF286DE18A005D7009 /* TestMocks */ = {
+			isa = PBXGroup;
+			children = (
+				CFB591D3286DFA4B005D7009 /* ErrorMock */,
+				CFB591D0286DE1AA005D7009 /* DI */,
+			);
+			path = TestMocks;
+			sourceTree = "<group>";
+		};
+		CFB591D0286DE1AA005D7009 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				CFB591D1286DE209005D7009 /* TestMocks+Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		CFB591D3286DFA4B005D7009 /* ErrorMock */ = {
+			isa = PBXGroup;
+			children = (
+				CFB591D4286DFA55005D7009 /* ErrorMock.swift */,
+			);
+			path = ErrorMock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -354,6 +466,24 @@
 			productReference = CF577E3228631F0000E2D519 /* DadJokesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CFB591C2286DDFBB005D7009 /* DadJokesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB591C9286DDFBB005D7009 /* Build configuration list for PBXNativeTarget "DadJokesTests" */;
+			buildPhases = (
+				CFB591BF286DDFBB005D7009 /* Sources */,
+				CFB591C0286DDFBB005D7009 /* Frameworks */,
+				CFB591C1286DDFBB005D7009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFB591C8286DDFBB005D7009 /* PBXTargetDependency */,
+			);
+			name = DadJokesTests;
+			productName = DadJokesTests;
+			productReference = CFB591C3286DDFBB005D7009 /* DadJokesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -368,6 +498,11 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					CF577E3128631F0000E2D519 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+						TestTargetID = ACBF583127EB71AD006F021A;
+					};
+					CFB591C2286DDFBB005D7009 = {
 						CreatedOnToolsVersion = 13.3.1;
 						LastSwiftMigration = 1330;
 						TestTargetID = ACBF583127EB71AD006F021A;
@@ -391,6 +526,7 @@
 			projectRoot = "";
 			targets = (
 				ACBF583127EB71AD006F021A /* DadJokes */,
+				CFB591C2286DDFBB005D7009 /* DadJokesTests */,
 				CF577E3128631F0000E2D519 /* DadJokesUITests */,
 			);
 		};
@@ -413,6 +549,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CFB591C1286DDFBB005D7009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -422,6 +565,7 @@
 			files = (
 				CF30ECB9283FBA190036ABA0 /* DashboardView.swift in Sources */,
 				CF3F61552858C9AB00238772 /* Favorites+Injection.swift in Sources */,
+				CFB591B8286C6C9C005D7009 /* RandomJokeDataSource.swift in Sources */,
 				CF3F614F2858C62500238772 /* App+Injection.swift in Sources */,
 				CF3F61582858CA8B00238772 /* RandomJoke+Injection.swift in Sources */,
 				CF30ECC3283FBFE50036ABA0 /* RandomJokeView.swift in Sources */,
@@ -436,10 +580,14 @@
 				CF30ECDF28410DE90036ABA0 /* DashboardResources.swift in Sources */,
 				CF09F36E2860C24900AFDBA6 /* CommonResources.swift in Sources */,
 				CF30ECBB283FBA290036ABA0 /* DashboardViewModel.swift in Sources */,
+				CF577E972865AF5400E2D519 /* GetRandomJokeUseCase.swift in Sources */,
+				CFB591BB286C6D47005D7009 /* RandomJokeDataModel.swift in Sources */,
 				CF3F61482858C30700238772 /* ViewModel.swift in Sources */,
 				CF30ECE9284119740036ABA0 /* DashboardViewProvider.swift in Sources */,
 				CF210EE828450FD000C1D35D /* AppViewProvider.swift in Sources */,
 				CF30ECBF283FBFC00036ABA0 /* FavoritesView.swift in Sources */,
+				CF577E9D2865F82800E2D519 /* RandomJokeDomainModel.swift in Sources */,
+				CFB591BE286C6E1C005D7009 /* RandomJokeMockDataSource.swift in Sources */,
 				CF210EEA284510CF00C1D35D /* ViewProvider.swift in Sources */,
 				CF30ECCA2840E3460036ABA0 /* DashboardMenuListItem.swift in Sources */,
 				ACBF583627EB71AD006F021A /* DadJokesApp.swift in Sources */,
@@ -459,6 +607,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CFB591BF286DDFBB005D7009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB591CE286DE09E005D7009 /* GetRandomJokeUseCaseTests.swift in Sources */,
+				CFB591D5286DFA55005D7009 /* ErrorMock.swift in Sources */,
+				CFB591D2286DE209005D7009 /* TestMocks+Injection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -466,6 +624,11 @@
 			isa = PBXTargetDependency;
 			target = ACBF583127EB71AD006F021A /* DadJokes */;
 			targetProxy = CF577E3828631F0000E2D519 /* PBXContainerItemProxy */;
+		};
+		CFB591C8286DDFBB005D7009 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACBF583127EB71AD006F021A /* DadJokes */;
+			targetProxy = CFB591C7286DDFBB005D7009 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -695,6 +858,57 @@
 			};
 			name = Release;
 		};
+		CFB591CA286DDFBB005D7009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56M5PADWP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.somalimbek.DadJokesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DadJokes.app/DadJokes";
+			};
+			name = Debug;
+		};
+		CFB591CB286DDFBB005D7009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56M5PADWP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.somalimbek.DadJokesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DadJokes.app/DadJokes";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -721,6 +935,15 @@
 			buildConfigurations = (
 				CF577E3A28631F0000E2D519 /* Debug */,
 				CF577E3B28631F0000E2D519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB591C9286DDFBB005D7009 /* Build configuration list for PBXNativeTarget "DadJokesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB591CA286DDFBB005D7009 /* Debug */,
+				CFB591CB286DDFBB005D7009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
