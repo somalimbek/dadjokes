@@ -23,7 +23,7 @@ class GetRandomJokeUseCaseTests: XCTestCase {
     
     // MARK: - Test execute success
     func testExecute_Success() {
-        register(randomJokeMockDataSource: Self.randomJokeMockDataSource_Success)
+        register(randomJokeMockDataSource: randomJokeMockDataSource_Success)
         sut = GetRandomJokeUseCaseImpl()
         
         var receivedJoke: RandomJokeDomainModel?
@@ -40,12 +40,12 @@ class GetRandomJokeUseCaseTests: XCTestCase {
             })
             .store(in: &cancellables)
         
-        XCTAssertEqual(receivedJoke?.setup, Self.setupMock)
+        XCTAssertEqual(receivedJoke?.setup, setupMock)
     }
     
     // MARK: - Test execute error
     func testExecute_Error() {
-        register(randomJokeMockDataSource: Self.randomJokeMockDataSource_Error)
+        register(randomJokeMockDataSource: randomJokeMockDataSource_Error)
         sut = GetRandomJokeUseCaseImpl()
         
         var receivedError: Error?
@@ -60,22 +60,22 @@ class GetRandomJokeUseCaseTests: XCTestCase {
             }, receiveValue: { _ in })
             .store(in: &cancellables)
         
-        XCTAssertEqual((receivedError as? ErrorMock)?.description, Self.errorMock.description)
+        XCTAssertEqual((receivedError as? ErrorMock)?.description, errorMock.description)
     }
 }
 
 // MARK: - Mocks
 private extension GetRandomJokeUseCaseTests {
     
-    static var setupMock: String { "setup mock"}
-    static var punchlineMock: String { "punchline mock"}
-    static var errorMock: ErrorMock { ErrorMock() }
+    var setupMock: String { "setup mock"}
+    var punchlineMock: String { "punchline mock"}
+    var errorMock: ErrorMock { ErrorMock() }
     
-    static var randomJokeDataModelMock: RandomJokeDataModel {
+    var randomJokeDataModelMock: RandomJokeDataModel {
         RandomJokeDataModel(setup: setupMock, punchline: punchlineMock)
     }
     
-    static var randomJokeMockDataSource_Success: RandomJokeMockDataSource {
+    var randomJokeMockDataSource_Success: RandomJokeMockDataSource {
         RandomJokeMockDataSource(
             success: true,
             joke: randomJokeDataModelMock,
@@ -83,7 +83,7 @@ private extension GetRandomJokeUseCaseTests {
         )
     }
     
-    static var randomJokeMockDataSource_Error: RandomJokeMockDataSource {
+    var randomJokeMockDataSource_Error: RandomJokeMockDataSource {
         RandomJokeMockDataSource(
             success: false,
             joke: randomJokeDataModelMock,
