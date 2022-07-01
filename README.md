@@ -40,7 +40,10 @@ The aim is to exercise SwiftUI, so the plan is to implement the whole UI in Swif
 - MVP when using UIKit (if needed)
 
 ### Business Layer Architecture
-As for now, the business logic of the application is either to send an api call or store an object persistently. I will start out with a piece of the [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html): all business logic will be organized by use case objects. More components of Clean can be used if required by the size of the project in the future.
+There is two sublayers in the business layer:
+- Data layer
+- Domain layer
+Data layer consists of types that are responsible for api calls and persistency. Domain layer types are responsible for a single busniness use case.
 
 Definition for use case types:
 - There is one separate type for every separate business logic use case (the name of the type is also suffixed with 'UseCase'), meaning every use case type has exactly one well defined task.
