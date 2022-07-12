@@ -42,6 +42,7 @@
 		CF577E972865AF5400E2D519 /* GetRandomJokeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF577E962865AF5400E2D519 /* GetRandomJokeUseCase.swift */; };
 		CF577E9D2865F82800E2D519 /* RandomJokeDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF577E9C2865F82800E2D519 /* RandomJokeDomainModel.swift */; };
 		CF93AB0E287D6B1500903ED9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93AB0D287D6B1500903ED9 /* Constants.swift */; };
+		CF93AB11287DAC6900903ED9 /* RandomJokeDataSourceTestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93AB10287DAC6900903ED9 /* RandomJokeDataSourceTestMock.swift */; };
 		CFA5AE0A28746A03007C068B /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA5AE0928746A03007C068B /* Loading.swift */; };
 		CFB591B8286C6C9C005D7009 /* RandomJokeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591B7286C6C9C005D7009 /* RandomJokeDataSource.swift */; };
 		CFB591BB286C6D47005D7009 /* RandomJokeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591BA286C6D47005D7009 /* RandomJokeDataModel.swift */; };
@@ -102,6 +103,7 @@
 		CF577E962865AF5400E2D519 /* GetRandomJokeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRandomJokeUseCase.swift; sourceTree = "<group>"; };
 		CF577E9C2865F82800E2D519 /* RandomJokeDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDomainModel.swift; sourceTree = "<group>"; };
 		CF93AB0D287D6B1500903ED9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CF93AB10287DAC6900903ED9 /* RandomJokeDataSourceTestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDataSourceTestMock.swift; sourceTree = "<group>"; };
 		CFA5AE0928746A03007C068B /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		CFB591B7286C6C9C005D7009 /* RandomJokeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDataSource.swift; sourceTree = "<group>"; };
 		CFB591BA286C6D47005D7009 /* RandomJokeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDataModel.swift; sourceTree = "<group>"; };
@@ -383,6 +385,14 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		CF93AB0F287DAC4D00903ED9 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				CF93AB10287DAC6900903ED9 /* RandomJokeDataSourceTestMock.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		CFA5AE0128742BA3007C068B /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +446,7 @@
 		CFB591CF286DE18A005D7009 /* TestMocks */ = {
 			isa = PBXGroup;
 			children = (
+				CF93AB0F287DAC4D00903ED9 /* DataSource */,
 				CFB591D3286DFA4B005D7009 /* ErrorMock */,
 				CFB591D0286DE1AA005D7009 /* DI */,
 			);
@@ -647,6 +658,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF93AB11287DAC6900903ED9 /* RandomJokeDataSourceTestMock.swift in Sources */,
 				CFB591CE286DE09E005D7009 /* GetRandomJokeUseCaseTests.swift in Sources */,
 				CFB591D5286DFA55005D7009 /* ErrorMock.swift in Sources */,
 				CFB591D2286DE209005D7009 /* TestMocks+Injection.swift in Sources */,

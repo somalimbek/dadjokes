@@ -14,17 +14,25 @@ class GetRandomJokeUseCaseTests: XCTestCase {
     
     // MARK: - Properties
     private var sut: GetRandomJokeUseCaseImpl!
+    private var randomJokeDataSourceMock: RandomJokeDataSourceTestMock!
     private var cancellables: Set<AnyCancellable>!
 
     // MARK: - Set up
+    override class func setUp() {
+        Resolver.testMock.register { RandomJokeDataSourceTestMock() }
+            .implements(RandomJokeDataSource.self)
+            .scope(.shared)
+    }
+    
     override func setUp() {
+        sut = GetRandomJokeUseCaseImpl()
+        randomJokeDataSourceMock = Resolver.optional()
         cancellables = []
     }
     
     // MARK: - Test execute success
     func testExecute_Success() {
-        register(randomJokeMockDataSource: randomJokeMockDataSource_Success)
-        sut = GetRandomJokeUseCaseImpl()
+        randomJokeDataSourceMock.success = true
         
         var receivedJoke: RandomJokeDomainModel?
         sut.execute()
@@ -40,13 +48,12 @@ class GetRandomJokeUseCaseTests: XCTestCase {
             })
             .store(in: &cancellables)
         
-        XCTAssertEqual(receivedJoke?.setup, setupMock)
+        XCTAssertEqual(receivedJoke?.punchline, randomJokeDataSourceMock.joke.punchline)
     }
     
     // MARK: - Test execute error
     func testExecute_Error() {
-        register(randomJokeMockDataSource: randomJokeMockDataSource_Error)
-        sut = GetRandomJokeUseCaseImpl()
+        randomJokeDataSourceMock.success = false
         
         var receivedError: Error?
         sut.execute()
@@ -60,39 +67,6 @@ class GetRandomJokeUseCaseTests: XCTestCase {
             }, receiveValue: { _ in })
             .store(in: &cancellables)
         
-        XCTAssertEqual((receivedError as? ErrorMock)?.description, errorMock.description)
-    }
-}
-
-// MARK: - Mocks
-private extension GetRandomJokeUseCaseTests {
-    
-    var setupMock: String { "setup mock"}
-    var punchlineMock: String { "punchline mock"}
-    var errorMock: ErrorMock { ErrorMock() }
-    
-    var randomJokeDataModelMock: RandomJokeDataModel {
-        RandomJokeDataModel(setup: setupMock, punchline: punchlineMock)
-    }
-    
-    var randomJokeMockDataSource_Success: RandomJokeMockDataSource {
-        RandomJokeMockDataSource(
-            success: true,
-            joke: randomJokeDataModelMock,
-            error: errorMock
-        )
-    }
-    
-    var randomJokeMockDataSource_Error: RandomJokeMockDataSource {
-        RandomJokeMockDataSource(
-            success: false,
-            joke: randomJokeDataModelMock,
-            error: errorMock
-        )
-    }
-    
-    func register(randomJokeMockDataSource: RandomJokeMockDataSource) {
-        Resolver.testMock.register { randomJokeMockDataSource as RandomJokeDataSource }
-            .scope(.shared)
+        XCTAssertEqual(receivedError?.localizedDescription, randomJokeDataSourceMock.error.localizedDescription)
     }
 }
