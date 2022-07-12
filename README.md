@@ -25,7 +25,7 @@ For detailed feature description, see Functional Specification.
       - Name of the joke - ask for user input
       - Date when the joke is saved
     - If there is no space for adding more favourites:
-      - Inform user that he/she cannot add new joke until deletin one
+      - Inform user that they cannot add new joke until deleting one
 - Favourites screen
   - List favourites
     - Sorting: alphabetic - based on the name of joke
