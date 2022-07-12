@@ -42,7 +42,7 @@
 		CF577E972865AF5400E2D519 /* GetRandomJokeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF577E962865AF5400E2D519 /* GetRandomJokeUseCase.swift */; };
 		CF577E9D2865F82800E2D519 /* RandomJokeDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF577E9C2865F82800E2D519 /* RandomJokeDomainModel.swift */; };
 		CF93AB0E287D6B1500903ED9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93AB0D287D6B1500903ED9 /* Constants.swift */; };
-		CFA5AE0A28746A03007C068B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA5AE0928746A03007C068B /* LoadingView.swift */; };
+		CFA5AE0A28746A03007C068B /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA5AE0928746A03007C068B /* Loading.swift */; };
 		CFB591B8286C6C9C005D7009 /* RandomJokeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591B7286C6C9C005D7009 /* RandomJokeDataSource.swift */; };
 		CFB591BB286C6D47005D7009 /* RandomJokeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591BA286C6D47005D7009 /* RandomJokeDataModel.swift */; };
 		CFB591BE286C6E1C005D7009 /* RandomJokeMockDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591BD286C6E1C005D7009 /* RandomJokeMockDataSource.swift */; };
@@ -102,7 +102,7 @@
 		CF577E962865AF5400E2D519 /* GetRandomJokeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRandomJokeUseCase.swift; sourceTree = "<group>"; };
 		CF577E9C2865F82800E2D519 /* RandomJokeDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDomainModel.swift; sourceTree = "<group>"; };
 		CF93AB0D287D6B1500903ED9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		CFA5AE0928746A03007C068B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CFA5AE0928746A03007C068B /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		CFB591B7286C6C9C005D7009 /* RandomJokeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDataSource.swift; sourceTree = "<group>"; };
 		CFB591BA286C6D47005D7009 /* RandomJokeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDataModel.swift; sourceTree = "<group>"; };
 		CFB591BD286C6E1C005D7009 /* RandomJokeMockDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeMockDataSource.swift; sourceTree = "<group>"; };
@@ -393,7 +393,7 @@
 		CFA5AE0628746041007C068B /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
-				CFA5AE0928746A03007C068B /* LoadingView.swift */,
+				CFA5AE0928746A03007C068B /* Loading.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -615,7 +615,7 @@
 				CF30ECBB283FBA290036ABA0 /* DashboardViewModel.swift in Sources */,
 				CFB591E8286F3256005D7009 /* RandomJokeViewModel.swift in Sources */,
 				CF577E972865AF5400E2D519 /* GetRandomJokeUseCase.swift in Sources */,
-				CFA5AE0A28746A03007C068B /* LoadingView.swift in Sources */,
+				CFA5AE0A28746A03007C068B /* Loading.swift in Sources */,
 				CFB591BB286C6D47005D7009 /* RandomJokeDataModel.swift in Sources */,
 				CF3F61482858C30700238772 /* ViewModel.swift in Sources */,
 				CF93AB0E287D6B1500903ED9 /* Constants.swift in Sources */,
