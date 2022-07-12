@@ -42,11 +42,14 @@ The aim is to exercise SwiftUI, so the plan is to implement the whole UI in Swif
 ### Business Layer Architecture
 There is two sublayers in the business layer:
 - Data layer
+  - Data source types (type names have 'DataSource' suffix)
 - Domain layer
-Data layer consists of types that are responsible for api calls and persistency. Domain layer types are responsible for a single busniness use case.
+  - Use case types (type names have 'UseCase' suffix)
+
+Data layer consists of data source types that are responsible for api calls and persistency. Domain layer types are responsible for a single busniness use case, they're calledd use case types.
 
 Definition for use case types:
-- There is one separate type for every separate business logic use case (the name of the type is also suffixed with 'UseCase'), meaning every use case type has exactly one well defined task.
+- There is one separate type for every separate business logic use case, meaning every use case type has exactly one well defined task.
 
 ### Dependency Management
 Swift Package Manager is used for dependency management. Let's find out what's it got.
