@@ -10,6 +10,8 @@ import Resolver
 // MARK: - RandomJoke
 extension Resolver {
     static func registerRandomJoke() {
+        registerData()
+        registerDomain()
         registerPresentation()
     }
 }
@@ -33,6 +35,9 @@ private extension Resolver {
     // MARK: - Presentation
     static func registerPresentation() {
         register { RandomJokeView() }
+        
+        register { RandomJokeViewModel() }
+            .scope(.shared)
         
         register { RandomJokeViewProviderImpl() as RandomJokeViewProvider }
             .implements(ViewProvider.self, name: .randomJoke)

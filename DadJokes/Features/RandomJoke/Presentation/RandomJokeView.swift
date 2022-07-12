@@ -9,13 +9,32 @@ import Resolver
 import SwiftUI
 
 struct RandomJokeView: View {
+    
+    @InjectedObject private var viewModel: RandomJokeViewModel
+    
     var body: some View {
         VStack {
-            Text(RandomJokeResources.featureName)
-                .font(.title)
-                .padding()
-            Text(RandomJokeResources.description)
+            VStack {
+                if let jokeSetup = viewModel.jokeSetup {
+                    Text(jokeSetup)
+                        .font(.title)
+                        .padding()
+                }
+                if let jokePunchline = viewModel.jokePunchline {
+                    Text(jokePunchline)
+                }
+            }
+            .loading(viewModel.isLoading)
+            
+            Button(RandomJokeResources.showPunchline, action: viewModel.showPunchline)
+                .buttonStyle(.bordered)
+                .disabled(viewModel.isLoading || viewModel.jokePunchline != nil)
+            
+            Button(RandomJokeResources.getNewJoke, action: viewModel.getNewJoke)
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(RandomJokeResources.featureName)
+        .onAppear(perform: viewModel.onAppear)
     }
 }
 

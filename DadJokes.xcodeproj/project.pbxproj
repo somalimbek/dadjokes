@@ -41,12 +41,15 @@
 		CF577E94286332AE00E2D519 /* CommonResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09F36D2860C24900AFDBA6 /* CommonResources.swift */; };
 		CF577E972865AF5400E2D519 /* GetRandomJokeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF577E962865AF5400E2D519 /* GetRandomJokeUseCase.swift */; };
 		CF577E9D2865F82800E2D519 /* RandomJokeDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF577E9C2865F82800E2D519 /* RandomJokeDomainModel.swift */; };
+		CF93AB0E287D6B1500903ED9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93AB0D287D6B1500903ED9 /* Constants.swift */; };
+		CFA5AE0A28746A03007C068B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA5AE0928746A03007C068B /* LoadingView.swift */; };
 		CFB591B8286C6C9C005D7009 /* RandomJokeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591B7286C6C9C005D7009 /* RandomJokeDataSource.swift */; };
 		CFB591BB286C6D47005D7009 /* RandomJokeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591BA286C6D47005D7009 /* RandomJokeDataModel.swift */; };
 		CFB591BE286C6E1C005D7009 /* RandomJokeMockDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591BD286C6E1C005D7009 /* RandomJokeMockDataSource.swift */; };
 		CFB591CE286DE09E005D7009 /* GetRandomJokeUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591CD286DE09E005D7009 /* GetRandomJokeUseCaseTests.swift */; };
 		CFB591D2286DE209005D7009 /* TestMocks+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591D1286DE209005D7009 /* TestMocks+Injection.swift */; };
 		CFB591D5286DFA55005D7009 /* ErrorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591D4286DFA55005D7009 /* ErrorMock.swift */; };
+		CFB591E8286F3256005D7009 /* RandomJokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591E7286F3256005D7009 /* RandomJokeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +101,8 @@
 		CF577E8E2863242C00E2D519 /* AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests.swift; sourceTree = "<group>"; };
 		CF577E962865AF5400E2D519 /* GetRandomJokeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRandomJokeUseCase.swift; sourceTree = "<group>"; };
 		CF577E9C2865F82800E2D519 /* RandomJokeDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDomainModel.swift; sourceTree = "<group>"; };
+		CF93AB0D287D6B1500903ED9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CFA5AE0928746A03007C068B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		CFB591B7286C6C9C005D7009 /* RandomJokeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDataSource.swift; sourceTree = "<group>"; };
 		CFB591BA286C6D47005D7009 /* RandomJokeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDataModel.swift; sourceTree = "<group>"; };
 		CFB591BD286C6E1C005D7009 /* RandomJokeMockDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeMockDataSource.swift; sourceTree = "<group>"; };
@@ -105,6 +110,7 @@
 		CFB591CD286DE09E005D7009 /* GetRandomJokeUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRandomJokeUseCaseTests.swift; sourceTree = "<group>"; };
 		CFB591D1286DE209005D7009 /* TestMocks+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestMocks+Injection.swift"; sourceTree = "<group>"; };
 		CFB591D4286DFA55005D7009 /* ErrorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMock.swift; sourceTree = "<group>"; };
+		CFB591E7286F3256005D7009 /* RandomJokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +182,7 @@
 		CF210EEB284510D300C1D35D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CFA5AE0628746041007C068B /* ViewModifiers */,
 				CF3F615E285B66B000238772 /* Destination.swift */,
 				CF3F61472858C30700238772 /* ViewModel.swift */,
 				CF210EE9284510CF00C1D35D /* ViewProvider.swift */,
@@ -246,6 +253,7 @@
 		CF30ECC4283FC8DB0036ABA0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CF93AB0C287D6B0A00903ED9 /* Config */,
 				CF3F615B285B525F00238772 /* DI */,
 				CF30ECC7283FCBC20036ABA0 /* Extensions */,
 				CF210EEB284510D300C1D35D /* Presentation */,
@@ -290,7 +298,9 @@
 		CF30ECE428410F2C0036ABA0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CFA5AE0128742BA3007C068B /* Model */,
 				CF30ECC2283FBFE50036ABA0 /* RandomJokeView.swift */,
+				CFB591E7286F3256005D7009 /* RandomJokeViewModel.swift */,
 				CF210EF12845147F00C1D35D /* RandomJokeViewProvider.swift */,
 			);
 			path = Presentation;
@@ -363,6 +373,29 @@
 				CF577E9C2865F82800E2D519 /* RandomJokeDomainModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CF93AB0C287D6B0A00903ED9 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				CF93AB0D287D6B1500903ED9 /* Constants.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		CFA5AE0128742BA3007C068B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFA5AE0628746041007C068B /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				CFA5AE0928746A03007C068B /* LoadingView.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 		CFB591B6286C6C23005D7009 /* Data */ = {
@@ -580,9 +613,12 @@
 				CF30ECDF28410DE90036ABA0 /* DashboardResources.swift in Sources */,
 				CF09F36E2860C24900AFDBA6 /* CommonResources.swift in Sources */,
 				CF30ECBB283FBA290036ABA0 /* DashboardViewModel.swift in Sources */,
+				CFB591E8286F3256005D7009 /* RandomJokeViewModel.swift in Sources */,
 				CF577E972865AF5400E2D519 /* GetRandomJokeUseCase.swift in Sources */,
+				CFA5AE0A28746A03007C068B /* LoadingView.swift in Sources */,
 				CFB591BB286C6D47005D7009 /* RandomJokeDataModel.swift in Sources */,
 				CF3F61482858C30700238772 /* ViewModel.swift in Sources */,
+				CF93AB0E287D6B1500903ED9 /* Constants.swift in Sources */,
 				CF30ECE9284119740036ABA0 /* DashboardViewProvider.swift in Sources */,
 				CF210EE828450FD000C1D35D /* AppViewProvider.swift in Sources */,
 				CF30ECBF283FBFC00036ABA0 /* FavoritesView.swift in Sources */,
