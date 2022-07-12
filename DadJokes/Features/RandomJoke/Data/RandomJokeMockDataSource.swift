@@ -11,7 +11,15 @@ import Foundation
 struct RandomJokeMockDataSource {
     
     // MARK: - Default values
-    private let joke = RandomJokeDataModel(setup: "this is the setup of the joke", punchline: "this is the punchline")
+    private static var previousJokeNumber = 0
+    private var randomJokeNumber: Int { Int.random(in: 1...30) }
+    private var joke: RandomJokeDataModel {
+        var jokeNumber = self.randomJokeNumber
+        while jokeNumber == Self.previousJokeNumber {
+            jokeNumber = self.randomJokeNumber
+        }
+        return RandomJokeDataModel(setup: "Setup \(jokeNumber)", punchline: "Punchline \(jokeNumber)")
+    }
     private let error = URLError(.unknown)
     
     // MARK: - Properties

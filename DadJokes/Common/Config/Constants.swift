@@ -8,5 +8,5 @@
 import Foundation
 
 enum Constants {
-    static let mockResponseDelay = 1.0
+    static let mockResponseDelay = 0.5
 }
