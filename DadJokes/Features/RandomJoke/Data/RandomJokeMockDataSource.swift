@@ -23,7 +23,7 @@ struct RandomJokeMockDataSource {
     private let error = URLError(.unknown)
     
     // MARK: - Properties
-    let success = true
+    private let success = true
 }
 
 // MARK: - RandomJokeDataSource

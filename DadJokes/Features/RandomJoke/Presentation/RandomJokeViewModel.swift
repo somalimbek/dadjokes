@@ -11,10 +11,12 @@ import Combine
 final class RandomJokeViewModel: ViewModel {
     
     // MARK: - Public Properties
-    @Published var jokeSetup: String?
+    @Published var jokeSetup: String? { didSet { updateNewJokeButtonState() } }
     @Published var jokePunchline: String? { didSet { updateNewJokeButtonState() } }
-    @Published var isNewJokeButtonDisabled = true
-    @Published var isLoading = true { didSet { updateNewJokeButtonState() } }
+    @Published var isShowPunchlineButtonEnabled = true
+    @Published var isLoading = true
+    @Published var showAlert = false
+    @Published var error: Error? { didSet { checkIfNeedToShowAlert() } }
     
     // MARK: - Injected Properties
     private let getRandomJokeUseCase: GetRandomJokeUseCase = Resolver.resolve()
@@ -38,14 +40,9 @@ extension RandomJokeViewModel {
     
     func getNewJoke() {
         isLoading = true
+        joke = nil
         getRandomJokeUseCase.execute()
-            .sink(receiveCompletion: { [weak self] error in
-                print(error)
-                self?.isLoading = false
-            }, receiveValue: { [weak self] newJoke in
-                self?.joke = newJoke
-                self?.isLoading = false
-            })
+            .sink(receiveCompletion: getNewJokeReceiveCompletion, receiveValue: getNewJokeReceiveValue)
             .store(in: &cancellableStore)
     }
     
@@ -58,6 +55,27 @@ extension RandomJokeViewModel {
 private extension RandomJokeViewModel {
     
     func updateNewJokeButtonState() {
-        isNewJokeButtonDisabled = isLoading || jokePunchline != nil
+        isShowPunchlineButtonEnabled = jokeSetup != nil && jokePunchline == nil
+    }
+    
+    func checkIfNeedToShowAlert() {
+        if error != nil {
+            showAlert = true
+        }
+    }
+    
+    func getNewJokeReceiveValue(_ newJoke: RandomJokeDomainModel) {
+        joke = newJoke
+        isLoading = false
+    }
+    
+    func getNewJokeReceiveCompletion(_ completion: Subscribers.Completion<Error>) {
+        switch completion {
+        case .failure(let error):
+            self.error = error
+        case .finished:
+            break
+        }
+        isLoading = false
     }
 }
