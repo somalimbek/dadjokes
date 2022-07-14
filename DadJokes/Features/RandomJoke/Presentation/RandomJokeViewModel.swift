@@ -8,7 +8,7 @@
 import Resolver
 import Combine
 
-final class RandomJokeViewModel: ViewModel {
+class RandomJokeViewModel: ViewModel {
     
     // MARK: - Public Properties
     @Published var jokeSetup: String? { didSet { updateNewJokeButtonState() } }
@@ -19,7 +19,7 @@ final class RandomJokeViewModel: ViewModel {
     @Published var error: Error? { didSet { checkIfNeedToShowAlert() } }
     
     // MARK: - Injected Properties
-    private let getRandomJokeUseCase: GetRandomJokeUseCase = Resolver.resolve()
+    private let getRandomJokeUseCase: GetRandomJokeUseCase
     
     // MARK: - Private Properties
     private var cancellableStore = Set<AnyCancellable>()
@@ -29,11 +29,13 @@ final class RandomJokeViewModel: ViewModel {
             jokePunchline = nil
         }
     }
-}
-
-// MARK: - Public
-extension RandomJokeViewModel {
     
+    // MARK: - Init
+    init(getRandomJokeUseCase: GetRandomJokeUseCase) {
+        self.getRandomJokeUseCase = getRandomJokeUseCase
+    }
+
+    // MARK: - Public functions
     func onAppear() {
         getNewJoke()
     }
@@ -66,7 +68,6 @@ private extension RandomJokeViewModel {
     
     func getNewJokeReceiveValue(_ newJoke: RandomJokeDomainModel) {
         joke = newJoke
-        isLoading = false
     }
     
     func getNewJokeReceiveCompletion(_ completion: Subscribers.Completion<Error>) {

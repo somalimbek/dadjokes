@@ -9,21 +9,19 @@ import Combine
 import Foundation
 @testable import DadJokes
 
-final class RandomJokeDataSourceTestMock: RandomJokeDataSource {
+final class RandomJokeDataSourceTestMock: NetworkingTestMock {
 
     let joke = RandomJokeDataModel(setup: "mock setup", punchline: "mock punchline")
     let error = URLError(.badURL)
     
+    // MARK: - NetworkingTestMock
     var success = true
+}
+
+// MARK: - RandomJokeDataSource
+extension RandomJokeDataSourceTestMock: RandomJokeDataSource {
     
     func getRandomJoke() -> AnyPublisher<RandomJokeDataModel, Error> {
-        return Future { promise in
-            if self.success {
-                promise(.success(self.joke))
-            } else {
-                promise(.failure(self.error))
-            }
-        }
-        .eraseToAnyPublisher()
+        return futureAsAnyPublisher(output: joke, error: error)
     }
 }

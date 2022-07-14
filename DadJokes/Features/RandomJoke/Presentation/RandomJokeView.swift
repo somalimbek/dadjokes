@@ -22,22 +22,22 @@ struct RandomJokeView: View {
             
             getNewJokeButton
         }
-        .setupNavigationBar()
-        .setupAlert(isPresented: $viewModel.showAlert, errorMessage: viewModel.error?.localizedDescription)
+        .setUpNavigationBar()
+        .setUpAlert(isPresented: $viewModel.showAlert, errorMessage: viewModel.error?.localizedDescription)
         .onAppear(perform: viewModel.onAppear)
     }
 }
 
-// MARK: - View Setup
+// MARK: - View Set up
 private extension View {
     
-    func setupNavigationBar() -> some View {
+    func setUpNavigationBar() -> some View {
         return self
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle(RandomJokeResources.featureName)
     }
     
-    func setupAlert(isPresented: Binding<Bool>, errorMessage: String?) -> some View {
+    func setUpAlert(isPresented: Binding<Bool>, errorMessage: String?) -> some View {
         return self
             .alert(CommonResources.commonErrorTitle, isPresented: isPresented) { } message: {
                 if let errorMessage = errorMessage {
