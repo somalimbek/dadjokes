@@ -10,9 +10,10 @@ import Foundation
 struct RandomJokeDomainModel {
     let setup: String
     let punchline: String
-    
-    init(fromDataModel dataModel: RandomJokeDataModel) {
-        setup = dataModel.setup
-        punchline = dataModel.punchline
+}
+
+extension RandomJokeDataModel {    
+    var domainModel: RandomJokeDomainModel {
+        RandomJokeDomainModel(setup: setup, punchline: punchline)
     }
 }

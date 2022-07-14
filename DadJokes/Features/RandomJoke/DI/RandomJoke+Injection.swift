@@ -36,7 +36,7 @@ private extension Resolver {
     static func registerPresentation() {
         register { RandomJokeView() }
         
-        register { RandomJokeViewModel() }
+        register { RandomJokeViewModel(getRandomJokeUseCase: resolve()) }
             .scope(.shared)
         
         register { RandomJokeViewProviderImpl() as RandomJokeViewProvider }
