@@ -11,25 +11,24 @@ import Foundation
 struct RandomJokeMockDataSource {
     
     // MARK: - Default values
-    private let defaultJoke = RandomJokeDataModel(setup: "this is the setup of the joke", punchline: "this is the punchline")
-    private let defaultError = URLError(.unknown)
+    private static var previousJokeNumber = 0
+    private var randomJokeNumber: Int { Int.random(in: 1...30) }
+    private var joke: RandomJokeDataModel {
+        var jokeNumber = self.randomJokeNumber
+        while jokeNumber == Self.previousJokeNumber {
+            jokeNumber = self.randomJokeNumber
+        }
+        return RandomJokeDataModel(setup: "Setup \(jokeNumber)", punchline: "Punchline \(jokeNumber)")
+    }
+    private let error = URLError(.unknown)
     
     // MARK: - Properties
-    let success: Bool
-    let joke: RandomJokeDataModel
-    let error: Error
-    
-    // MARK: - Init
-    init(success: Bool = true, joke: RandomJokeDataModel? = nil, error: Error? = nil) {
-        self.success = success
-        self.joke = joke ?? defaultJoke
-        self.error = error ?? defaultError
-    }
+    private let success = true
 }
 
 // MARK: - RandomJokeDataSource
 extension RandomJokeMockDataSource: RandomJokeDataSource {
-    func getRandomJoke() -> Future<RandomJokeDataModel, Error> {
+    func getRandomJoke() -> AnyPublisher<RandomJokeDataModel, Error> {
         return Future { promise in
             if success {
                 promise(.success(joke))
@@ -37,5 +36,7 @@ extension RandomJokeMockDataSource: RandomJokeDataSource {
                 promise(.failure(error))
             }
         }
+        .delay(for: .seconds(Constants.mockResponseDelay), scheduler: RunLoop.main)
+        .eraseToAnyPublisher()
     }
 }

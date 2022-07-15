@@ -9,4 +9,5 @@ import Foundation
 
 enum CommonResources {
     static let app = "App"
+    static let commonErrorTitle = "Something went wrong."
 }

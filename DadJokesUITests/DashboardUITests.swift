@@ -18,7 +18,7 @@ class DashboardUITests: XCTestCase {
     
     func testOpenRandomJoke() {
         app.buttons[RandomJokeResources.featureName].tap()
-        XCTAssert(app.staticTexts[RandomJokeResources.description].exists)
+        XCTAssert(app.navigationBars[RandomJokeResources.featureName].exists)
     }
     
     func testOpenFavorites() {

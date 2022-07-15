@@ -21,10 +21,9 @@ struct GetRandomJokeUseCaseImpl {
 extension GetRandomJokeUseCaseImpl: GetRandomJokeUseCase {
     func execute() -> AnyPublisher<RandomJokeDomainModel, Error> {
         return randomJokeDataSource.getRandomJoke()
-            .flatMap { dataModel -> Future<RandomJokeDomainModel, Error> in
+            .flatMap { joke -> Future<RandomJokeDomainModel, Error> in
                 Future { promise in
-                    let domainModel = RandomJokeDomainModel(fromDataModel: dataModel)
-                    promise(.success(domainModel))
+                    promise(.success(joke.domainModel))
                 }
             }
             .eraseToAnyPublisher()
