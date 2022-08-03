@@ -54,9 +54,6 @@
 		CFB591D2286DE209005D7009 /* TestMocks+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591D1286DE209005D7009 /* TestMocks+Injection.swift */; };
 		CFB591D5286DFA55005D7009 /* ErrorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591D4286DFA55005D7009 /* ErrorMock.swift */; };
 		CFB591E8286F3256005D7009 /* RandomJokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB591E7286F3256005D7009 /* RandomJokeViewModel.swift */; };
-		CFDE38262890355A00E2DC47 /* RandomJokeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDE38252890355A00E2DC47 /* RandomJokeUITests.swift */; };
-		CFDE382C2891794800E2DC47 /* UITestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDE382B2891794800E2DC47 /* UITestConstants.swift */; };
-		CFDE382D28917A9600E2DC47 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93AB0D287D6B1500903ED9 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,8 +119,6 @@
 		CFB591D1286DE209005D7009 /* TestMocks+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestMocks+Injection.swift"; sourceTree = "<group>"; };
 		CFB591D4286DFA55005D7009 /* ErrorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMock.swift; sourceTree = "<group>"; };
 		CFB591E7286F3256005D7009 /* RandomJokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeViewModel.swift; sourceTree = "<group>"; };
-		CFDE38252890355A00E2DC47 /* RandomJokeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeUITests.swift; sourceTree = "<group>"; };
-		CFDE382B2891794800E2DC47 /* UITestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -354,10 +349,8 @@
 		CF577E3328631F0000E2D519 /* DadJokesUITests */ = {
 			isa = PBXGroup;
 			children = (
-				CFDE382A2891793800E2DC47 /* Config */,
 				CF577E8E2863242C00E2D519 /* AppUITests.swift */,
 				CF577E412863209400E2D519 /* DashboardUITests.swift */,
-				CFDE38252890355A00E2DC47 /* RandomJokeUITests.swift */,
 			);
 			path = DadJokesUITests;
 			sourceTree = "<group>";
@@ -499,14 +492,6 @@
 				CFB591D4286DFA55005D7009 /* ErrorMock.swift */,
 			);
 			path = ErrorMock;
-			sourceTree = "<group>";
-		};
-		CFDE382A2891793800E2DC47 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				CFDE382B2891794800E2DC47 /* UITestConstants.swift */,
-			);
-			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -688,12 +673,9 @@
 				CF577E422863209400E2D519 /* DashboardUITests.swift in Sources */,
 				CF577E92286332AE00E2D519 /* FavoritesResources.swift in Sources */,
 				CF577E94286332AE00E2D519 /* CommonResources.swift in Sources */,
-				CFDE382C2891794800E2DC47 /* UITestConstants.swift in Sources */,
 				CF577E93286332AE00E2D519 /* RandomJokeResources.swift in Sources */,
 				CF577E8F2863242C00E2D519 /* AppUITests.swift in Sources */,
-				CFDE38262890355A00E2DC47 /* RandomJokeUITests.swift in Sources */,
 				CF577E91286332AE00E2D519 /* DashboardResources.swift in Sources */,
-				CFDE382D28917A9600E2DC47 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
