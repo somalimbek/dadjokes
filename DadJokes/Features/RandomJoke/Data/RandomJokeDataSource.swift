@@ -8,5 +8,5 @@
 import Combine
 
 protocol RandomJokeDataSource {
-    func getRandomJoke() -> Future<RandomJokeDataModel, Error>
+    func getRandomJoke() -> AnyPublisher<RandomJokeDataModel, Error>
 }
