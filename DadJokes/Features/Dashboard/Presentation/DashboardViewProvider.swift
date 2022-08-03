@@ -26,7 +26,7 @@ struct DashboardViewProviderImpl {
 
 // MARK: - DashboardViewProvider
 extension DashboardViewProviderImpl: DashboardViewProvider {
-    var rootView: Destination { Resolver.resolve(DashboardView.self).asDestination }
+    var rootView: Destination { DashboardView().asDestination }
     var randomJoke: Destination { randomJokeViewProvider.rootView }
     var favorites: Destination { favoritesViewProvider.rootView }
 }

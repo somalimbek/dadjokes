@@ -22,8 +22,6 @@ extension Resolver.Name {
 // MARK: - Presentation
 private extension Resolver {
     static func registerPresentation() {
-        register { FavoritesView() }
-        
         register { FavoritesViewProviderImpl() as FavoritesViewProvider }
             .implements(ViewProvider.self, name: .favorites)
     }

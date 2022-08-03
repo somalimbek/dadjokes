@@ -34,8 +34,6 @@ private extension Resolver {
     
     // MARK: - Presentation
     static func registerPresentation() {
-        register { RandomJokeView() }
-        
         register { RandomJokeViewModel(getRandomJokeUseCase: resolve()) }
             .scope(.shared)
         

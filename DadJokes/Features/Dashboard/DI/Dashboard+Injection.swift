@@ -22,8 +22,6 @@ extension Resolver.Name {
 // MARK: - Presentation
 private extension Resolver {
     static func registerPresentation() {
-        register { DashboardView() }
-        
         register { DashboardViewModel(viewProvider: resolve()) }
             .scope(.shared)
         
