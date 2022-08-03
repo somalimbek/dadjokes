@@ -24,10 +24,13 @@ private extension Resolver {
     static func registerPresentation() {
         register { DashboardView() }
         
-        register { DashboardViewModel() }
+        register { DashboardViewModel(viewProvider: resolve()) }
             .scope(.shared)
         
-        register { DashboardViewProviderImpl() as DashboardViewProvider }
-            .implements(ViewProvider.self, name: .dashboard)
+        register {
+            DashboardViewProviderImpl(randomJokeViewProvider: resolve(name: .randomJoke),
+                                      favoritesViewProvider: resolve(name: .favorites)) as DashboardViewProvider
+        }
+        .implements(ViewProvider.self, name: .dashboard)
     }
 }

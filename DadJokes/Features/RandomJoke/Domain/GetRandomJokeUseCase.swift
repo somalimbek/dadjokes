@@ -13,8 +13,13 @@ protocol GetRandomJokeUseCase {
 }
 
 struct GetRandomJokeUseCaseImpl {
-    // MARK: - Properties
-    private let randomJokeDataSource: RandomJokeDataSource = Resolver.resolve()
+    // MARK: - Injected Properties
+    private let randomJokeDataSource: RandomJokeDataSource
+    
+    // MARK: - Init
+    init(randomJokeDataSource: RandomJokeDataSource) {
+        self.randomJokeDataSource = randomJokeDataSource
+    }
 }
 
 // MARK: - GetRandomJokeUseCase

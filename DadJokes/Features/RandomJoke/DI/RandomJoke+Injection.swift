@@ -29,7 +29,7 @@ private extension Resolver {
     
     // MARK: - Domain
     static func registerDomain() {
-        register { GetRandomJokeUseCaseImpl() as GetRandomJokeUseCase }
+        register { GetRandomJokeUseCaseImpl(randomJokeDataSource: resolve()) as GetRandomJokeUseCase }
     }
     
     // MARK: - Presentation

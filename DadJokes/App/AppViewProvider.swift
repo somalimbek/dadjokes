@@ -11,8 +11,13 @@ protocol AppViewProvider: ViewProvider { }
 
 struct AppViewProviderImpl {
     
-    // MARK: - Properties
-    private let dashboardViewProvider: ViewProvider = Resolver.resolve(name: .dashboard)
+    // MARK: - Injected Properties
+    private let dashboardViewProvider: ViewProvider
+    
+    // MARK: - Init
+    init(dashboardViewProvider: ViewProvider) {
+        self.dashboardViewProvider = dashboardViewProvider
+    }
 }
 
 // MARK: - AppViewProvider
