@@ -9,7 +9,7 @@ import Foundation
 
 enum RandomJokeResources {
     static let featureName = "Random Joke"
-    static let description = "Tap the button to get a hilarious dad joke."
+    static let featureDescription = "Tap the button to get a hilarious dad joke."
     static let getNewJoke = "Next joke"
     static let showPunchline = "Show punchline"
 }

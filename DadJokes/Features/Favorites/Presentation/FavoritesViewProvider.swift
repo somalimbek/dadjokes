@@ -12,5 +12,5 @@ protocol FavoritesViewProvider: ViewProvider { }
 struct FavoritesViewProviderImpl { }
 
 extension FavoritesViewProviderImpl: FavoritesViewProvider {
-    var rootView: Destination { Resolver.resolve(FavoritesView.self).asDestination }
+    var rootView: Destination { FavoritesView().asDestination }
 }

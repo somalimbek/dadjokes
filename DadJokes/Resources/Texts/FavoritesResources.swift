@@ -9,5 +9,5 @@ import Foundation
 
 enum FavoritesResources {
     static let featureName = "Favorites"
-    static let description = "Jokes you mark as favorite will appear here."
+    static let featureDescription = "Jokes you mark as favorite will appear here."
 }

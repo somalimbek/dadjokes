@@ -18,15 +18,9 @@ class GetRandomJokeUseCaseTests: XCTestCase {
     private var cancellables: Set<AnyCancellable>!
 
     // MARK: - Set up
-    override class func setUp() {
-        Resolver.testMock.register { RandomJokeDataSourceTestMock() }
-            .implements(RandomJokeDataSource.self)
-            .scope(.shared)
-    }
-    
     override func setUp() {
-        sut = GetRandomJokeUseCaseImpl()
-        randomJokeDataSourceMock = Resolver.optional()
+        randomJokeDataSourceMock = RandomJokeDataSourceTestMock()
+        sut = GetRandomJokeUseCaseImpl(randomJokeDataSource: randomJokeDataSourceMock)
         cancellables = []
     }
     

@@ -10,9 +10,9 @@ import Resolver
 // MARK: - RandomJoke
 extension Resolver {
     static func registerRandomJoke() {
-        registerData()
-        registerDomain()
-        registerPresentation()
+        registerDataLayer()
+        registerDomainLayer()
+        registerPresentationLayer()
     }
 }
 
@@ -23,19 +23,17 @@ extension Resolver.Name {
 
 private extension Resolver {
     // MARK: - Data
-    static func registerData() {
+    static func registerDataLayer() {
         register { RandomJokeMockDataSource() as RandomJokeDataSource }
     }
     
     // MARK: - Domain
-    static func registerDomain() {
-        register { GetRandomJokeUseCaseImpl() as GetRandomJokeUseCase }
+    static func registerDomainLayer() {
+        register { GetRandomJokeUseCaseImpl(randomJokeDataSource: resolve()) as GetRandomJokeUseCase }
     }
     
     // MARK: - Presentation
-    static func registerPresentation() {
-        register { RandomJokeView() }
-        
+    static func registerPresentationLayer() {
         register { RandomJokeViewModel(getRandomJokeUseCase: resolve()) }
             .scope(.shared)
         

@@ -14,13 +14,19 @@ protocol DashboardViewProvider: ViewProvider {
 
 struct DashboardViewProviderImpl {
     // MARK: - Injected Properties
-    private let randomJokeViewProvider: ViewProvider = Resolver.resolve(name: .randomJoke)
-    private let favoritesViewProvider: ViewProvider = Resolver.resolve(name: .favorites)
+    private let randomJokeViewProvider: ViewProvider
+    private let favoritesViewProvider: ViewProvider
+    
+    // MARK: - Init
+    init(randomJokeViewProvider: ViewProvider ,favoritesViewProvider: ViewProvider) {
+        self.randomJokeViewProvider = randomJokeViewProvider
+        self.favoritesViewProvider = favoritesViewProvider
+    }
 }
 
 // MARK: - DashboardViewProvider
 extension DashboardViewProviderImpl: DashboardViewProvider {
-    var rootView: Destination { Resolver.resolve(DashboardView.self).asDestination }
+    var rootView: Destination { DashboardView().asDestination }
     var randomJoke: Destination { randomJokeViewProvider.rootView }
     var favorites: Destination { favoritesViewProvider.rootView }
 }

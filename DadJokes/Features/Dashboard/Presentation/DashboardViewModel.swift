@@ -10,7 +10,12 @@ import Resolver
 final class DashboardViewModel: ViewModel {
     
     // MARK: - Injected Properties
-    private let viewProvider: DashboardViewProvider = Resolver.resolve()
+    private let viewProvider: DashboardViewProvider
+    
+    // MARK: - Init
+    init(viewProvider: DashboardViewProvider) {
+        self.viewProvider = viewProvider
+    }
     
     // MARK: - Public Properties
     let navigationTitle = DashboardResources.featureName

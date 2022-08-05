@@ -12,5 +12,5 @@ protocol RandomJokeViewProvider: ViewProvider { }
 struct RandomJokeViewProviderImpl { }
 
 extension RandomJokeViewProviderImpl: RandomJokeViewProvider {
-    var rootView: Destination { Resolver.resolve(RandomJokeView.self).asDestination }
+    var rootView: Destination { RandomJokeView().asDestination }
 }
