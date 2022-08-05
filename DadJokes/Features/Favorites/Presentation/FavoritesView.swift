@@ -14,7 +14,7 @@ struct FavoritesView: View {
             Text(FavoritesResources.featureName)
                 .font(.title)
                 .padding()
-            Text(FavoritesResources.description)
+            Text(FavoritesResources.featureDescription)
         }
     }
 }
