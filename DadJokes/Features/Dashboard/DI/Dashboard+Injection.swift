@@ -10,7 +10,7 @@ import Resolver
 // MARK: - Dashboard
 extension Resolver {
     static func registerDashboard() {
-        registerPresentation()
+        registerPresentationLayer()
     }
 }
 
@@ -21,7 +21,7 @@ extension Resolver.Name {
 
 // MARK: - Presentation
 private extension Resolver {
-    static func registerPresentation() {
+    static func registerPresentationLayer() {
         register { DashboardViewModel(viewProvider: resolve()) }
             .scope(.shared)
         

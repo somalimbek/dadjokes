@@ -10,7 +10,7 @@ import Resolver
 // MARK: - Favorites
 extension Resolver {
     static func registerFavorites() {
-        registerPresentation()
+        registerPresentationLayer()
     }
 }
 
@@ -21,7 +21,7 @@ extension Resolver.Name {
 
 // MARK: - Presentation
 private extension Resolver {
-    static func registerPresentation() {
+    static func registerPresentationLayer() {
         register { FavoritesViewProviderImpl() as FavoritesViewProvider }
             .implements(ViewProvider.self, name: .favorites)
     }
