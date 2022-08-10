@@ -23,6 +23,6 @@ class DashboardUITests: XCTestCase {
     
     func testOpenFavorites() {
         app.buttons[FavoritesResources.featureName].tap()
-        XCTAssert(app.staticTexts[FavoritesResources.description].exists)
+        XCTAssert(app.staticTexts[FavoritesResources.featureDescription].exists)
     }
 }

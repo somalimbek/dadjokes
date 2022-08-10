@@ -10,4 +10,9 @@ import Foundation
 struct RandomJokeDataModel: Codable {
     let setup: String
     let punchline: String
+    
+    enum CodingKeys: String, CodingKey {
+        case setup
+        case punchline = "delivery"
+    }
 }

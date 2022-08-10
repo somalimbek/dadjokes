@@ -24,7 +24,7 @@ extension Resolver.Name {
 private extension Resolver {
     // MARK: - Data
     static func registerDataLayer() {
-        register { RandomJokeMockDataSource() as RandomJokeDataSource }
+        register { RandomJokeRemoteDataSource() as RandomJokeDataSource }
     }
     
     // MARK: - Domain

@@ -41,6 +41,8 @@
 		CF577E94286332AE00E2D519 /* CommonResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09F36D2860C24900AFDBA6 /* CommonResources.swift */; };
 		CF577E972865AF5400E2D519 /* GetRandomJokeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF577E962865AF5400E2D519 /* GetRandomJokeUseCase.swift */; };
 		CF577E9D2865F82800E2D519 /* RandomJokeDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF577E9C2865F82800E2D519 /* RandomJokeDomainModel.swift */; };
+		CF870861289D54700056FC62 /* RandomJokeRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF870860289D54700056FC62 /* RandomJokeRemoteDataSource.swift */; };
+		CF870864289D60370056FC62 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF870863289D60370056FC62 /* RemoteDataSource.swift */; };
 		CF93AB0E287D6B1500903ED9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93AB0D287D6B1500903ED9 /* Constants.swift */; };
 		CF93AB11287DAC6900903ED9 /* RandomJokeDataSourceTestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93AB10287DAC6900903ED9 /* RandomJokeDataSourceTestMock.swift */; };
 		CF93AB13287EF90300903ED9 /* RandomJokeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93AB12287EF90300903ED9 /* RandomJokeViewModelTests.swift */; };
@@ -105,6 +107,8 @@
 		CF577E8E2863242C00E2D519 /* AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests.swift; sourceTree = "<group>"; };
 		CF577E962865AF5400E2D519 /* GetRandomJokeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRandomJokeUseCase.swift; sourceTree = "<group>"; };
 		CF577E9C2865F82800E2D519 /* RandomJokeDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDomainModel.swift; sourceTree = "<group>"; };
+		CF870860289D54700056FC62 /* RandomJokeRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeRemoteDataSource.swift; sourceTree = "<group>"; };
+		CF870863289D60370056FC62 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
 		CF93AB0D287D6B1500903ED9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CF93AB10287DAC6900903ED9 /* RandomJokeDataSourceTestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDataSourceTestMock.swift; sourceTree = "<group>"; };
 		CF93AB12287EF90300903ED9 /* RandomJokeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeViewModelTests.swift; sourceTree = "<group>"; };
@@ -262,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				CF93AB0C287D6B0A00903ED9 /* Config */,
+				CF870862289D60240056FC62 /* Data */,
 				CF3F615B285B525F00238772 /* DI */,
 				CF30ECC7283FCBC20036ABA0 /* Extensions */,
 				CF210EEB284510D300C1D35D /* Presentation */,
@@ -383,6 +388,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CF870862289D60240056FC62 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CF870863289D60370056FC62 /* RemoteDataSource.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		CF93AB0C287D6B0A00903ED9 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +449,7 @@
 				CFB591B9286C6D3D005D7009 /* Model */,
 				CFB591B7286C6C9C005D7009 /* RandomJokeDataSource.swift */,
 				CFB591BD286C6E1C005D7009 /* RandomJokeMockDataSource.swift */,
+				CF870860289D54700056FC62 /* RandomJokeRemoteDataSource.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -645,6 +659,7 @@
 				CF3F615D285B526D00238772 /* Common+Injection.swift in Sources */,
 				CF3F615F285B66B000238772 /* Destination.swift in Sources */,
 				CF30ECE728410F440036ABA0 /* RandomJokeResources.swift in Sources */,
+				CF870864289D60370056FC62 /* RemoteDataSource.swift in Sources */,
 				CF210EF22845147F00C1D35D /* RandomJokeViewProvider.swift in Sources */,
 				CF30ECDF28410DE90036ABA0 /* DashboardResources.swift in Sources */,
 				CF09F36E2860C24900AFDBA6 /* CommonResources.swift in Sources */,
@@ -656,6 +671,7 @@
 				CF3F61482858C30700238772 /* ViewModel.swift in Sources */,
 				CF93AB0E287D6B1500903ED9 /* Constants.swift in Sources */,
 				CF30ECE9284119740036ABA0 /* DashboardViewProvider.swift in Sources */,
+				CF870861289D54700056FC62 /* RandomJokeRemoteDataSource.swift in Sources */,
 				CF210EE828450FD000C1D35D /* AppViewProvider.swift in Sources */,
 				CF30ECBF283FBFC00036ABA0 /* FavoritesView.swift in Sources */,
 				CF577E9D2865F82800E2D519 /* RandomJokeDomainModel.swift in Sources */,
