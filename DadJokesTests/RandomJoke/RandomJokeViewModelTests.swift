@@ -54,7 +54,12 @@ class RandomJokeViewModelTests: XCTestCase {
     func test_Display_received_joke_setup() {
         getRandomJokeUseCaseMock.success = true
         
+        expectation(forPublisher: sut.$jokeSetup, fulfillAfter: 2)
+            .store(in: &cancellables)
+
         sut.getNewJoke()
+        waitForExpectations(timeout: 10.0)
+        
         XCTAssertEqual(sut.jokeSetup, getRandomJokeUseCaseMock.joke.setup)
         XCTAssertNil(sut.jokePunchline)
         
@@ -64,15 +69,23 @@ class RandomJokeViewModelTests: XCTestCase {
     func test_Hide_loader_after_receiving_new_joke() {
         getRandomJokeUseCaseMock.success = true
         sut.isLoading = true
-        
+        expectation(forPublisher: sut.$isLoading, fulfillAfter: 2)
+            .store(in: &cancellables)
+
         sut.getNewJoke()
+        waitForExpectations(timeout: 10.0)
+        
         XCTAssertFalse(sut.isLoading)
     }
     
     func test_Display_error_received_when_asked_for_new_joke() {
         getRandomJokeUseCaseMock.success = false
-        
+        expectation(forPublisher: sut.$error)
+            .store(in: &cancellables)
+
         sut.getNewJoke()
+        waitForExpectations(timeout: 10.0)
+
         XCTAssertEqual(sut.error?.localizedDescription, getRandomJokeUseCaseMock.error.localizedDescription)
         XCTAssertTrue(sut.showAlert)
     }
@@ -81,15 +94,24 @@ class RandomJokeViewModelTests: XCTestCase {
         getRandomJokeUseCaseMock.success = false
         sut.isLoading = true
         
+        expectation(forPublisher: sut.$isLoading, fulfillAfter: 2)
+            .store(in: &cancellables)
+
         sut.getNewJoke()
+        waitForExpectations(timeout: 10.0)
+        
         XCTAssertFalse(sut.isLoading)
     }
     
     func test_Display_punchline() {
         getRandomJokeUseCaseMock.success = true
+        expectation(forPublisher: sut.$jokeSetup, fulfillAfter: 2)
+            .store(in: &cancellables)
         sut.getNewJoke()
+        waitForExpectations(timeout: 10.0)
         
         sut.showPunchline()
+        
         XCTAssertEqual(sut.jokePunchline, getRandomJokeUseCaseMock.joke.punchline)
     }
 }
