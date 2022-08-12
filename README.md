@@ -34,6 +34,9 @@ For detailed feature description, see Functional Specification.
 
 ## Technical Documentation
 
+### Api
+https://v2.jokeapi.dev/
+
 ### UI layer architecture
 The aim is to exercise SwiftUI, so the plan is to implement the whole UI in SwiftUI. The architecture for UI codes are:
 - MVVM when using SwiftUI
