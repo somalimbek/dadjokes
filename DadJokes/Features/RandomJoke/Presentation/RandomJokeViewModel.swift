@@ -5,8 +5,9 @@
 //  Created by Soma Limbek on 2022. 07. 01..
 //
 
-import Resolver
 import Combine
+import Resolver
+import Foundation
 
 class RandomJokeViewModel: ViewModel {
     
@@ -44,6 +45,7 @@ class RandomJokeViewModel: ViewModel {
         isLoading = true
         joke = nil
         getRandomJokeUseCase.execute()
+            .receive(on: RunLoop.main)
             .sink(receiveCompletion: getNewJokeReceiveCompletion, receiveValue: getNewJokeReceiveValue)
             .store(in: &cancellableStore)
     }
