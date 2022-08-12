@@ -13,11 +13,11 @@ protocol RemoteDataSource {
     var path: String { get }
     var parameters: String { get }
     
-    func buildURL() -> AnyPublisher<URL, URLError>
+    func publishURL() -> AnyPublisher<URL, URLError>
 }
 
 extension RemoteDataSource {
-    func buildURL() -> AnyPublisher<URL, URLError> {
+    func publishURL() -> AnyPublisher<URL, URLError> {
         return Future { promise in
             if let url = URL(string: baseURL + path + parameters) {
                 promise(.success(url))

@@ -15,10 +15,9 @@ struct RandomJokeRemoteDataSource: RemoteDataSource {
 }
 
 // MARK: - RandomJokeDataSource
-extension RandomJokeRemoteDataSource: RandomJokeDataSource {
+extension RandomJokeRemoteDataSource: RandomJokeDataSource {    
     func getRandomJoke() -> AnyPublisher<RandomJokeDataModel, Error> {
-        
-        return buildURL()
+        return publishURL()
             .flatMap { url in URLSession.shared.dataTaskPublisher(for: url) }
             .tryMap { element -> Data in
                 guard let httpResponse = element.response as? HTTPURLResponse,
