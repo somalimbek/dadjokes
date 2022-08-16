@@ -22,13 +22,7 @@ extension Resolver.Name {
 // MARK: - Presentation
 private extension Resolver {
     static func registerPresentationLayer() {
-        register { DashboardViewModel(viewProvider: resolve()) }
+        register { DashboardViewModel(coordinator: resolve()) }
             .scope(.shared)
-        
-        register {
-            DashboardViewProviderImpl(randomJokeViewProvider: resolve(name: .randomJoke),
-                                      favoritesViewProvider: resolve(name: .favorites)) as DashboardViewProvider
-        }
-        .implements(ViewProvider.self, name: .dashboard)
     }
 }

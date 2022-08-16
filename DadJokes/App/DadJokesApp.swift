@@ -11,11 +11,11 @@ import SwiftUI
 @main
 struct DadJokesApp: App {
     
-    @Injected private var viewProvider: AppViewProvider
+    @Injected private var coordinator: AppCoordinator
     
     var body: some Scene {
         WindowGroup {
-            viewProvider.rootView
+            coordinator.rootView
         }
     }
 }

@@ -35,9 +35,6 @@ private extension Resolver {
     // MARK: - Presentation
     static func registerPresentationLayer() {
         register { RandomJokeViewModel(getRandomJokeUseCase: resolve()) }
-            .scope(.shared)
-        
-        register { RandomJokeViewProviderImpl() as RandomJokeViewProvider }
-            .implements(ViewProvider.self, name: .randomJoke)
+            .scope(.shared)        
     }
 }

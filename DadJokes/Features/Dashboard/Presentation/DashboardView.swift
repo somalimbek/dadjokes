@@ -15,13 +15,12 @@ struct DashboardView: View {
     
     // MARK: - Body
     var body: some View {
-        NavigationView {
-            List(viewModel.menuList) {
-                NavigationLink($0.title, destination: $0.navigationDestination)
+        List(viewModel.menuList) { item in
+            Button(item.title) {
+                viewModel.selected(listItem: item)
             }
-            .navigationTitle(viewModel.navigationTitle)
         }
-        .navigationViewStyle(.stack)
+        .navigationTitle(viewModel.navigationTitle)
     }
     
 }

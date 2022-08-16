@@ -10,19 +10,28 @@ import Resolver
 final class DashboardViewModel: ViewModel {
     
     // MARK: - Injected Properties
-    private let viewProvider: DashboardViewProvider
+    private let coordinator: AppCoordinator
     
     // MARK: - Init
-    init(viewProvider: DashboardViewProvider) {
-        self.viewProvider = viewProvider
+    init(coordinator: AppCoordinator) {
+        self.coordinator = coordinator
     }
     
     // MARK: - Public Properties
     let navigationTitle = DashboardResources.featureName
     var menuList: [DashboardMenuListItem] {
         [
-            DashboardMenuListItem(title: RandomJokeResources.featureName, navigationDestination: viewProvider.randomJoke),
-            DashboardMenuListItem(title: FavoritesResources.featureName, navigationDestination: viewProvider.favorites),
+            DashboardMenuListItem(title: RandomJokeResources.featureName, navigationDestination: .randomJoke),
+            DashboardMenuListItem(title: FavoritesResources.featureName, navigationDestination: .favorites),
         ]
+    }
+    
+    func selected(listItem: DashboardMenuListItem) {
+        switch (listItem.navigationDestination) {
+        case .randomJoke:
+            coordinator.pushRandomJokeView()
+        case .favorites:
+            coordinator.pushFavoritesView()
+        }
     }
 }

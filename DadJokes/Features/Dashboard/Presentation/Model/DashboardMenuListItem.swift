@@ -12,4 +12,8 @@ struct DashboardMenuListItem: Identifiable {
     let id = UUID()
     let title: String
     let navigationDestination: Destination
+    
+    enum Destination {
+        case randomJoke, favorites
+    }
 }

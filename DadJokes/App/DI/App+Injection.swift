@@ -26,6 +26,11 @@ extension Resolver.Name {
 // MARK: - App
 private extension Resolver {    
     static func registerApp() {
-        register { AppViewProviderImpl(dashboardViewProvider: resolve(name: .dashboard)) as AppViewProvider }
+        register { AppCoordinatorImpl(rootView: resolve(), viewModel: resolve()) as AppCoordinator }
+        
+        register { AppCoordinatorView(viewModel: resolve()) }
+        
+        register { AppCoordinatorViewModel() }
+            .scope(.shared)
     }
 }
