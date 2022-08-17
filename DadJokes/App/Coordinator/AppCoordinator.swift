@@ -6,17 +6,9 @@
 //
 
 import Foundation
-import Resolver
 import SwiftUI
 
-protocol Coordinator: AnyObject {
-    var rootView: AnyView { get }
-}
-
-protocol AppCoordinator: Coordinator {
-    func pushRandomJokeView()
-    func pushFavoritesView()
-}
+protocol AppCoordinator: Coordinator { }
 
 final class AppCoordinatorImpl {
     
@@ -30,13 +22,4 @@ final class AppCoordinatorImpl {
 }
 
 // MARK: - AppCoordinator
-extension AppCoordinatorImpl: AppCoordinator {
-    
-    func pushRandomJokeView() {
-        viewModel.presentRandomJokeView = true
-    }
-    
-    func pushFavoritesView() {
-        viewModel.presentFavoritesView = true
-    }
-}
+extension AppCoordinatorImpl: AppCoordinator { }

@@ -35,6 +35,10 @@
 		CF577E94286332AE00E2D519 /* CommonResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09F36D2860C24900AFDBA6 /* CommonResources.swift */; };
 		CF577E972865AF5400E2D519 /* GetRandomJokeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF577E962865AF5400E2D519 /* GetRandomJokeUseCase.swift */; };
 		CF577E9D2865F82800E2D519 /* RandomJokeDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF577E9C2865F82800E2D519 /* RandomJokeDomainModel.swift */; };
+		CF708BB328ACE3FA00593E7D /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF708BB228ACE3FA00593E7D /* DashboardCoordinator.swift */; };
+		CF708BB528ACE42200593E7D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF708BB428ACE42200593E7D /* Coordinator.swift */; };
+		CF708BB728ACE5BF00593E7D /* DashboardCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF708BB628ACE5BF00593E7D /* DashboardCoordinatorView.swift */; };
+		CF708BB928ACE5F000593E7D /* DashboardCoordinatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF708BB828ACE5F000593E7D /* DashboardCoordinatorViewModel.swift */; };
 		CF870861289D54700056FC62 /* RandomJokeRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF870860289D54700056FC62 /* RandomJokeRemoteDataSource.swift */; };
 		CF870864289D60370056FC62 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF870863289D60370056FC62 /* RemoteDataSource.swift */; };
 		CF93AB0E287D6B1500903ED9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93AB0D287D6B1500903ED9 /* Constants.swift */; };
@@ -99,6 +103,10 @@
 		CF577E8E2863242C00E2D519 /* AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests.swift; sourceTree = "<group>"; };
 		CF577E962865AF5400E2D519 /* GetRandomJokeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRandomJokeUseCase.swift; sourceTree = "<group>"; };
 		CF577E9C2865F82800E2D519 /* RandomJokeDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDomainModel.swift; sourceTree = "<group>"; };
+		CF708BB228ACE3FA00593E7D /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
+		CF708BB428ACE42200593E7D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CF708BB628ACE5BF00593E7D /* DashboardCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinatorView.swift; sourceTree = "<group>"; };
+		CF708BB828ACE5F000593E7D /* DashboardCoordinatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinatorViewModel.swift; sourceTree = "<group>"; };
 		CF870860289D54700056FC62 /* RandomJokeRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeRemoteDataSource.swift; sourceTree = "<group>"; };
 		CF870863289D60370056FC62 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
 		CF93AB0D287D6B1500903ED9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -193,6 +201,7 @@
 				CFA5AE0628746041007C068B /* ViewModifiers */,
 				CFF28EF528ABE0AB009D8B50 /* CoordinatorNode.swift */,
 				CF3F61472858C30700238772 /* ViewModel.swift */,
+				CF708BB428ACE42200593E7D /* Coordinator.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -220,6 +229,7 @@
 		CF30ECAF283FB3350036ABA0 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				CF708BB128ACE3E900593E7D /* Coordinator */,
 				CF3F61502858C7BD00238772 /* DI */,
 				CF30ECB6283FB7100036ABA0 /* Presentation */,
 			);
@@ -395,6 +405,16 @@
 				CF3F614E2858C62500238772 /* App+Injection.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		CF708BB128ACE3E900593E7D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CF708BB228ACE3FA00593E7D /* DashboardCoordinator.swift */,
+				CF708BB628ACE5BF00593E7D /* DashboardCoordinatorView.swift */,
+				CF708BB828ACE5F000593E7D /* DashboardCoordinatorViewModel.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		CF870862289D60240056FC62 /* Data */ = {
@@ -666,11 +686,14 @@
 				CF3F61522858C7F100238772 /* Dashboard+Injection.swift in Sources */,
 				CFF28EF028ABDB9F009D8B50 /* AppCoordinatorView.swift in Sources */,
 				CF30ECE328410E540036ABA0 /* FavoritesResources.swift in Sources */,
+				CF708BB928ACE5F000593E7D /* DashboardCoordinatorViewModel.swift in Sources */,
 				CF3F615D285B526D00238772 /* Common+Injection.swift in Sources */,
+				CF708BB328ACE3FA00593E7D /* DashboardCoordinator.swift in Sources */,
 				CF30ECE728410F440036ABA0 /* RandomJokeResources.swift in Sources */,
 				CF870864289D60370056FC62 /* RemoteDataSource.swift in Sources */,
 				CF30ECDF28410DE90036ABA0 /* DashboardResources.swift in Sources */,
 				CF09F36E2860C24900AFDBA6 /* CommonResources.swift in Sources */,
+				CF708BB528ACE42200593E7D /* Coordinator.swift in Sources */,
 				CFF28EF628ABE0AB009D8B50 /* CoordinatorNode.swift in Sources */,
 				CF30ECBB283FBA290036ABA0 /* DashboardViewModel.swift in Sources */,
 				CFB591E8286F3256005D7009 /* RandomJokeViewModel.swift in Sources */,
@@ -678,6 +701,7 @@
 				CFA5AE0A28746A03007C068B /* Loading.swift in Sources */,
 				CFB591BB286C6D47005D7009 /* RandomJokeDataModel.swift in Sources */,
 				CF3F61482858C30700238772 /* ViewModel.swift in Sources */,
+				CF708BB728ACE5BF00593E7D /* DashboardCoordinatorView.swift in Sources */,
 				CF93AB0E287D6B1500903ED9 /* Constants.swift in Sources */,
 				CFF28EF228ABDBAF009D8B50 /* AppCoordinatorViewModel.swift in Sources */,
 				CF870861289D54700056FC62 /* RandomJokeRemoteDataSource.swift in Sources */,

@@ -28,7 +28,7 @@ private extension Resolver {
     static func registerApp() {
         register { AppCoordinatorImpl(rootView: resolve(), viewModel: resolve()) as AppCoordinator }
         
-        register { AppCoordinatorView(viewModel: resolve()) }
+        register { AppCoordinatorView(viewModel: resolve(), dashboardCoordinatorView: resolve()) }
         
         register { AppCoordinatorViewModel() }
             .scope(.shared)

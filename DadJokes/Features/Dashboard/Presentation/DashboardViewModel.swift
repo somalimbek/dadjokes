@@ -10,10 +10,10 @@ import Resolver
 final class DashboardViewModel: ViewModel {
     
     // MARK: - Injected Properties
-    private let coordinator: AppCoordinator
+    private let coordinator: DashboardCoordinator
     
     // MARK: - Init
-    init(coordinator: AppCoordinator) {
+    init(coordinator: DashboardCoordinator) {
         self.coordinator = coordinator
     }
     

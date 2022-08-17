@@ -11,18 +11,12 @@ struct AppCoordinatorView: View {
     
     @StateObject var viewModel: AppCoordinatorViewModel
     
+    let dashboardCoordinatorView: DashboardCoordinatorView
+    
     var body: some View {
         NavigationView {
             VStack() {
-                DashboardView()
-                
-                CoordinatorNode(isPresented: $viewModel.presentRandomJokeView) {
-                    RandomJokeView()
-                }
-                
-                CoordinatorNode(isPresented: $viewModel.presentFavoritesView) {
-                    FavoritesView()
-                }
+                dashboardCoordinatorView
             }
         }
         .navigationViewStyle(.stack)
