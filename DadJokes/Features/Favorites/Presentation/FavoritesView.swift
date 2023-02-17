@@ -5,7 +5,6 @@
 //  Created by Soma Limbek on 2022. 05. 26..
 //
 
-import Resolver
 import SwiftUI
 
 struct FavoritesView: View {

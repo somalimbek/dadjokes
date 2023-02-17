@@ -5,7 +5,7 @@
 //  Created by Soma Limbek on 2022. 05. 30..
 //
 
-import Resolver
+import Foundation
 
 protocol FavoritesViewProvider: ViewProvider { }
 

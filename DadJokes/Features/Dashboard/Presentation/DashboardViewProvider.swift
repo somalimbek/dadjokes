@@ -5,7 +5,7 @@
 //  Created by Soma Limbek on 2022. 05. 27..
 //
 
-import Resolver
+import Foundation
 
 protocol DashboardViewProvider: ViewProvider {
     var randomJoke: Destination { get }

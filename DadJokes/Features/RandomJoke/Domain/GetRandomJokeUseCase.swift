@@ -6,7 +6,6 @@
 //
 
 import Combine
-import Resolver
 
 protocol GetRandomJokeUseCase {
     func execute() -> AnyPublisher<RandomJokeDomainModel, Error>
