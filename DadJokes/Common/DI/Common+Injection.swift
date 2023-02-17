@@ -13,3 +13,10 @@ extension Resolver {
         
     }
 }
+
+import Factory
+
+// MARK: - Common
+extension Container {
+
+}

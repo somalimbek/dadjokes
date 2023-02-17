@@ -26,3 +26,13 @@ private extension Resolver {
             .implements(ViewProvider.self, name: .favorites)
     }
 }
+
+import Factory
+
+// MARK: - Presentation
+extension Container {
+    
+    static let favoritesViewProvider = Factory<FavoritesViewProvider> {
+        FavoritesViewProviderImpl()
+    }
+}

@@ -29,3 +29,13 @@ private extension Resolver {
         register { AppViewProviderImpl(dashboardViewProvider: resolve(name: .dashboard)) as AppViewProvider }
     }
 }
+
+import Factory
+
+// MARK: - App
+extension Container {
+
+    static let appViewProvider = Factory<AppViewProvider> {
+        AppViewProviderImpl(dashboardViewProvider: dashboardViewProvider())
+    }
+}

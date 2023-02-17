@@ -32,3 +32,20 @@ private extension Resolver {
         .implements(ViewProvider.self, name: .dashboard)
     }
 }
+
+import Factory
+
+// MARK: - Presentation
+extension Container {
+    
+    static let dashboardViewModel = Factory(scope: .shared) {
+        DashboardViewModel(viewProvider: dashboardViewProvider())
+    }
+
+    static let dashboardViewProvider = Factory<DashboardViewProvider> {
+        DashboardViewProviderImpl(
+            randomJokeViewProvider: randomJokeViewProvider(),
+            favoritesViewProvider: favoritesViewProvider()
+        )
+    }
+}
