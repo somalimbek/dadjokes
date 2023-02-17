@@ -12,6 +12,7 @@
 		ACBF583D27EB71AF006F021A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBF583C27EB71AF006F021A /* Preview Assets.xcassets */; };
 		CF092B3A299FC49A0056DA70 /* JokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF092B39299FC49A0056DA70 /* JokeView.swift */; };
 		CF092B3C299FD15D0056DA70 /* JokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF092B3B299FD15D0056DA70 /* JokeViewModel.swift */; };
+		CF092B3F299FE9550056DA70 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = CF092B3E299FE9550056DA70 /* Factory */; };
 		CF09F36E2860C24900AFDBA6 /* CommonResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09F36D2860C24900AFDBA6 /* CommonResources.swift */; };
 		CF210EE828450FD000C1D35D /* AppViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EE728450FD000C1D35D /* AppViewProvider.swift */; };
 		CF210EEA284510CF00C1D35D /* ViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF210EE9284510CF00C1D35D /* ViewProvider.swift */; };
@@ -137,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF577E162861F72400E2D519 /* Resolver in Frameworks */,
+				CF092B3F299FE9550056DA70 /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +545,7 @@
 			name = DadJokes;
 			packageProductDependencies = (
 				CF577E152861F72400E2D519 /* Resolver */,
+				CF092B3E299FE9550056DA70 /* Factory */,
 			);
 			productName = DadJokes;
 			productReference = ACBF583227EB71AD006F021A /* DadJokes.app */;
@@ -620,6 +623,7 @@
 			mainGroup = ACBF582927EB71AD006F021A;
 			packageReferences = (
 				CF577E142861F72400E2D519 /* XCRemoteSwiftPackageReference "Resolver" */,
+				CF092B3D299FE9550056DA70 /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			productRefGroup = ACBF583327EB71AD006F021A /* Products */;
 			projectDirPath = "";
@@ -1063,6 +1067,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CF092B3D299FE9550056DA70 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		CF577E142861F72400E2D519 /* XCRemoteSwiftPackageReference "Resolver" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hmlongco/Resolver";
@@ -1074,6 +1086,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CF092B3E299FE9550056DA70 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF092B3D299FE9550056DA70 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
 		CF577E152861F72400E2D519 /* Resolver */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CF577E142861F72400E2D519 /* XCRemoteSwiftPackageReference "Resolver" */;
