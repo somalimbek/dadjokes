@@ -38,10 +38,10 @@ class RandomJokeViewModel: JokeViewModel {
 
     // MARK: - Public functions
     func onAppear() {
-        getNewJoke()
+        onNextJoke()
     }
     
-    func getNewJoke() {
+    func onNextJoke() {
         isLoading = true
         joke = nil
         getRandomJokeUseCase.execute()
@@ -50,7 +50,7 @@ class RandomJokeViewModel: JokeViewModel {
             .store(in: &cancellableStore)
     }
     
-    func showPunchline() {
+    func onShowPunchline() {
         jokePunchline = joke?.punchline
     }
 }

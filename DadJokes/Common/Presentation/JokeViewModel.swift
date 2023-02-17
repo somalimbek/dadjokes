@@ -14,6 +14,6 @@ protocol JokeViewModel: ViewModel {
     var isShowPunchlineButtonEnabled: Bool { get }
     var isLoading: Bool { get }
 
-    func getNewJoke()
-    func showPunchline()
+    func onNextJoke()
+    func onShowPunchline()
 }

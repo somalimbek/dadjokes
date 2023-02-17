@@ -41,13 +41,13 @@ private extension JokeView {
     }
 
     var primaryButton: some View {
-        Button(RandomJokeResources.showPunchline, action: viewModel.showPunchline)
+        Button(RandomJokeResources.showPunchline, action: viewModel.onShowPunchline)
             .buttonStyle(.bordered)
             .disabled(!viewModel.isShowPunchlineButtonEnabled)
     }
 
     var secondaryButton: some View {
-        Button(RandomJokeResources.getNewJoke, action: viewModel.getNewJoke)
+        Button(RandomJokeResources.getNewJoke, action: viewModel.onNextJoke)
             .disabled(viewModel.isLoading)
     }
 }
@@ -135,7 +135,6 @@ fileprivate final class JokeViewModelMock: JokeViewModel {
         self.isLoading = isLoading
     }
 
-    func onAppear() { }
-    func getNewJoke() { }
-    func showPunchline() { }
+    func onNextJoke() { }
+    func onShowPunchline() { }
 }
