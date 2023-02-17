@@ -9,7 +9,7 @@ import Combine
 import Resolver
 import Foundation
 
-class RandomJokeViewModel: ViewModel {
+class RandomJokeViewModel: JokeViewModel {
     
     // MARK: - Public Properties
     @Published var jokeSetup: String? { didSet { updateNewJokeButtonState() } }
@@ -38,10 +38,10 @@ class RandomJokeViewModel: ViewModel {
 
     // MARK: - Public functions
     func onAppear() {
-        getNewJoke()
+        onNextJoke()
     }
     
-    func getNewJoke() {
+    func onNextJoke() {
         isLoading = true
         joke = nil
         getRandomJokeUseCase.execute()
@@ -50,7 +50,7 @@ class RandomJokeViewModel: ViewModel {
             .store(in: &cancellableStore)
     }
     
-    func showPunchline() {
+    func onShowPunchline() {
         jokePunchline = joke?.punchline
     }
 }

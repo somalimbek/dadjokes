@@ -36,7 +36,7 @@ class RandomJokeViewModelTests: XCTestCase {
         
         sut.isLoading = false
         
-        sut.getNewJoke()
+        sut.onNextJoke()
         XCTAssertTrue(sut.isLoading)
     }
     
@@ -46,7 +46,7 @@ class RandomJokeViewModelTests: XCTestCase {
         sut.jokeSetup = ""
         sut.jokePunchline = ""
         
-        sut.getNewJoke()
+        sut.onNextJoke()
         XCTAssertNil(sut.jokeSetup)
         XCTAssertNil(sut.jokePunchline)
     }
@@ -57,7 +57,7 @@ class RandomJokeViewModelTests: XCTestCase {
         expectation(forPublisher: sut.$jokeSetup, fulfillAfter: 2)
             .store(in: &cancellables)
 
-        sut.getNewJoke()
+        sut.onNextJoke()
         waitForExpectations(timeout: 10.0)
         
         XCTAssertEqual(sut.jokeSetup, getRandomJokeUseCaseMock.joke.setup)
@@ -72,7 +72,7 @@ class RandomJokeViewModelTests: XCTestCase {
         expectation(forPublisher: sut.$isLoading, fulfillAfter: 2)
             .store(in: &cancellables)
 
-        sut.getNewJoke()
+        sut.onNextJoke()
         waitForExpectations(timeout: 10.0)
         
         XCTAssertFalse(sut.isLoading)
@@ -83,7 +83,7 @@ class RandomJokeViewModelTests: XCTestCase {
         expectation(forPublisher: sut.$error)
             .store(in: &cancellables)
 
-        sut.getNewJoke()
+        sut.onNextJoke()
         waitForExpectations(timeout: 10.0)
 
         XCTAssertEqual(sut.error?.localizedDescription, getRandomJokeUseCaseMock.error.localizedDescription)
@@ -97,7 +97,7 @@ class RandomJokeViewModelTests: XCTestCase {
         expectation(forPublisher: sut.$isLoading, fulfillAfter: 2)
             .store(in: &cancellables)
 
-        sut.getNewJoke()
+        sut.onNextJoke()
         waitForExpectations(timeout: 10.0)
         
         XCTAssertFalse(sut.isLoading)
@@ -107,10 +107,10 @@ class RandomJokeViewModelTests: XCTestCase {
         getRandomJokeUseCaseMock.success = true
         expectation(forPublisher: sut.$jokeSetup, fulfillAfter: 2)
             .store(in: &cancellables)
-        sut.getNewJoke()
+        sut.onNextJoke()
         waitForExpectations(timeout: 10.0)
         
-        sut.showPunchline()
+        sut.onShowPunchline()
         
         XCTAssertEqual(sut.jokePunchline, getRandomJokeUseCaseMock.joke.punchline)
     }
@@ -122,7 +122,7 @@ private extension RandomJokeViewModelTests {
         
         var didCallGetNewJoke = false
         
-        override func getNewJoke() {
+        override func onNextJoke() {
             didCallGetNewJoke = true
         }
     }
