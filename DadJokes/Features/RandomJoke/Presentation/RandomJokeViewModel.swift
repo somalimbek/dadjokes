@@ -9,7 +9,7 @@ import Combine
 import Resolver
 import Foundation
 
-class RandomJokeViewModel: ViewModel {
+class RandomJokeViewModel: JokeViewModel {
     
     // MARK: - Public Properties
     @Published var jokeSetup: String? { didSet { updateNewJokeButtonState() } }
