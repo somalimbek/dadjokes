@@ -5,13 +5,13 @@
 //  Created by Soma Limbek on 2022. 05. 26..
 //
 
-import Resolver
+import Factory
 import SwiftUI
 
 struct DashboardView: View {
     
     // MARK: - Properties
-    @InjectedObject private var viewModel: DashboardViewModel
+    @ObservedObject private var viewModel = Container.dashboardViewModel()
     
     // MARK: - Body
     var body: some View {

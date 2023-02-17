@@ -5,13 +5,13 @@
 //  Created by Soma Limbek on 2022. 03. 23..
 //
 
-import Resolver
+import Factory
 import SwiftUI
 
 @main
 struct DadJokesApp: App {
     
-    @Injected private var viewProvider: AppViewProvider
+    @Injected(Container.appViewProvider) private var viewProvider
     
     var body: some Scene {
         WindowGroup {

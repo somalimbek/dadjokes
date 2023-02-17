@@ -5,13 +5,13 @@
 //  Created by Soma Limbek on 2022. 05. 26..
 //
 
-import Resolver
+import Factory
 import SwiftUI
 
 struct RandomJokeView: View {
     
     // MARK: - ViewModel
-    @InjectedObject private var viewModel: RandomJokeViewModel
+    @ObservedObject private var viewModel = Container.randomJokeViewModel()
     
     // MARK: - Body
     var body: some View {
