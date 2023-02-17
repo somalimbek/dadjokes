@@ -6,7 +6,6 @@
 //
 
 import Combine
-import Resolver
 import Foundation
 
 class RandomJokeViewModel: JokeViewModel {

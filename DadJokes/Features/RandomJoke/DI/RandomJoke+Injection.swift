@@ -5,39 +5,32 @@
 //  Created by Soma Limbek on 2022. 06. 14..
 //
 
-import Resolver
+import Factory
 
-// MARK: - RandomJoke
-extension Resolver {
-    static func registerRandomJoke() {
-        registerDataLayer()
-        registerDomainLayer()
-        registerPresentationLayer()
+// MARK: - Data
+extension Container {
+    
+    static let randomJokeDataSource = Factory<RandomJokeDataSource>(scope: .shared) {
+        RandomJokeRemoteDataSource()
     }
 }
 
-// MARK: - Names
-extension Resolver.Name {
-    static let randomJoke = Self(RandomJokeResources.featureName)
+// MARK: - Domain
+extension Container {
+
+    static let getRandomJokeUseCase = Factory<GetRandomJokeUseCase>(scope: .shared) {
+        GetRandomJokeUseCaseImpl(randomJokeDataSource: randomJokeDataSource())
+    }
 }
 
-private extension Resolver {
-    // MARK: - Data
-    static func registerDataLayer() {
-        register { RandomJokeRemoteDataSource() as RandomJokeDataSource }
+// MARK: - Presentation
+extension Container {
+
+    static let randomJokeViewModel = Factory(scope: .shared) {
+        RandomJokeViewModel(getRandomJokeUseCase: getRandomJokeUseCase())
     }
-    
-    // MARK: - Domain
-    static func registerDomainLayer() {
-        register { GetRandomJokeUseCaseImpl(randomJokeDataSource: resolve()) as GetRandomJokeUseCase }
-    }
-    
-    // MARK: - Presentation
-    static func registerPresentationLayer() {
-        register { RandomJokeViewModel(getRandomJokeUseCase: resolve()) }
-            .scope(.shared)
-        
-        register { RandomJokeViewProviderImpl() as RandomJokeViewProvider }
-            .implements(ViewProvider.self, name: .randomJoke)
+
+    static let randomJokeViewProvider = Factory<RandomJokeViewProvider> {
+        RandomJokeViewProviderImpl()
     }
 }

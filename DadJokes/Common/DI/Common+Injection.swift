@@ -5,11 +5,9 @@
 //  Created by Soma Limbek on 2022. 06. 16..
 //
 
-import Resolver
+import Factory
 
 // MARK: - Common
-extension Resolver {
-    static func registerCommon() {
-        
-    }
+extension Container {
+
 }

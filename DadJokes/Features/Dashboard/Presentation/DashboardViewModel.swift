@@ -5,7 +5,7 @@
 //  Created by Soma Limbek on 2022. 05. 26..
 //
 
-import Resolver
+import Foundation
 
 final class DashboardViewModel: ViewModel {
     
