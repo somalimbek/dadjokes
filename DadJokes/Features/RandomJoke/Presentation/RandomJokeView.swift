@@ -11,7 +11,7 @@ import SwiftUI
 struct RandomJokeView: View {
     
     // MARK: - ViewModel
-    @ObservedObject private var viewModel = Container.randomJokeViewModel()
+    @ObservedObject private var viewModel = Container.shared.randomJokeViewModel()
     
     // MARK: - Body
     var body: some View {

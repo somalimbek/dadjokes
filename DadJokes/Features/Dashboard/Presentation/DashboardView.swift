@@ -11,7 +11,7 @@ import SwiftUI
 struct DashboardView: View {
     
     // MARK: - Properties
-    @ObservedObject private var viewModel = Container.dashboardViewModel()
+    @ObservedObject private var viewModel = Container.shared.dashboardViewModel()
     
     // MARK: - Body
     var body: some View {

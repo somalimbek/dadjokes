@@ -10,14 +10,19 @@ import Factory
 // MARK: - Presentation
 extension Container {
     
-    static let dashboardViewModel = Factory(scope: .shared) {
-        DashboardViewModel(viewProvider: dashboardViewProvider())
+    var dashboardViewModel: Factory<DashboardViewModel> {
+        self {
+            DashboardViewModel(viewProvider: self.dashboardViewProvider())
+        }
+        .shared
     }
 
-    static let dashboardViewProvider = Factory<DashboardViewProvider> {
-        DashboardViewProviderImpl(
-            randomJokeViewProvider: randomJokeViewProvider(),
-            favoritesViewProvider: favoritesViewProvider()
-        )
+    var dashboardViewProvider: Factory<DashboardViewProvider> {
+        self {
+            DashboardViewProviderImpl(
+                randomJokeViewProvider: self.randomJokeViewProvider(),
+                favoritesViewProvider: self.favoritesViewProvider()
+            )
+        }
     }
 }

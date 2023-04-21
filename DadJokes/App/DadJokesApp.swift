@@ -11,7 +11,7 @@ import SwiftUI
 @main
 struct DadJokesApp: App {
     
-    @Injected(Container.appViewProvider) private var viewProvider
+    @Injected(\.appViewProvider) private var viewProvider
     
     var body: some Scene {
         WindowGroup {

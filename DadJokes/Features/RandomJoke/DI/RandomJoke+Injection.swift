@@ -10,27 +10,38 @@ import Factory
 // MARK: - Data
 extension Container {
     
-    static let randomJokeDataSource = Factory<RandomJokeDataSource>(scope: .shared) {
-        RandomJokeRemoteDataSource()
+    var randomJokeDataSource: Factory<RandomJokeDataSource> {
+        self {
+            RandomJokeRemoteDataSource()
+        }
+        .shared
     }
 }
 
 // MARK: - Domain
 extension Container {
 
-    static let getRandomJokeUseCase = Factory<GetRandomJokeUseCase>(scope: .shared) {
-        GetRandomJokeUseCaseImpl(randomJokeDataSource: randomJokeDataSource())
+    var getRandomJokeUseCase: Factory<GetRandomJokeUseCase>{
+        self {
+            GetRandomJokeUseCaseImpl(randomJokeDataSource: self.randomJokeDataSource())
+        }
+        .shared
     }
 }
 
 // MARK: - Presentation
 extension Container {
 
-    static let randomJokeViewModel = Factory(scope: .shared) {
-        RandomJokeViewModel(getRandomJokeUseCase: getRandomJokeUseCase())
+    var randomJokeViewModel: Factory<RandomJokeViewModel> {
+        self {
+            RandomJokeViewModel(getRandomJokeUseCase: self.getRandomJokeUseCase())
+        }
+        .shared
     }
 
-    static let randomJokeViewProvider = Factory<RandomJokeViewProvider> {
-        RandomJokeViewProviderImpl()
+    var randomJokeViewProvider: Factory<RandomJokeViewProvider> {
+        self {
+            RandomJokeViewProviderImpl()
+        }
     }
 }
