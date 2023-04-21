@@ -10,7 +10,9 @@ import Factory
 // MARK: - App
 extension Container {
 
-    static let appViewProvider = Factory<AppViewProvider> {
-        AppViewProviderImpl(dashboardViewProvider: dashboardViewProvider())
+    var appViewProvider: Factory<AppViewProvider> {
+        self {
+            AppViewProviderImpl(dashboardViewProvider: self.dashboardViewProvider())
+        }
     }
 }
